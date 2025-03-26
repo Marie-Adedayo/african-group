@@ -1,64 +1,76 @@
-import React from "react";
+import { useState } from "react";
+import { GoArrowUpRight } from "react-icons/go";
 
-const ServicesLayout = () => {
+export default function ModernLayout() {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  const images = [
+    "/Services.webp",
+    "/company.jpg",
+    "/placeholder.svg?height=600&width=800&text=Science",
+    "/placeholder.svg?height=600&width=800&text=Capital",
+  ];
+
+  const listItems = [
+    { id: 1, number: "01", text: "Industrial & Logistics" },
+    { id: 2, number: "02", text: "Science & Technology" },
+    { id: 3, number: "03", text: "Alternative Capital Markets" },
+  ];
+
   return (
     <div className="container mx-auto">
       <div className="flex flex-col md:flex-row md:items-center">
-        {/* Left column with image */}
         <div className="w-full md:w-1/2">
           <div className="relative aspect-[4/3] w-full">
             <img
-              src="/placeholder.svg"
+              src={hoveredItem ? images[hoveredItem] : images[0]}
               alt="Modern building with blue glass facade"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full transition-opacity duration-300"
+              onError={(e) => (e.target.src = "/placeholder.svg")}
             />
           </div>
         </div>
 
-        {/* Right column with content */}
-        <div className="w-full md:w-1/2 p-6 md:p-12 space-y-6">
-          {/* Label button */}
+        <div className="w-full md:w-1/2 p-6 md:p-12 space-y-6 text-left">
           <div className="inline-block px-4 py-2 bg-gray-100 text-gray-700 text-xs font-medium tracking-wider uppercase">
-            Discover our services at DTRE
+            Discover our services at African Group
           </div>
 
-          {/* Heading with blue highlight */}
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-            A discreet adviser that consistently delivers{" "}
-            <span className="text-blue-500">quality advice</span> across
+            A discreet adviser that consistently delivers <span className="text-blue-500">quality advice</span> across
             the full transaction life cycle.
           </h2>
 
-          {/* Divider */}
           <div className="border-t border-gray-200 my-6"></div>
 
-          {/* Numbered list */}
           <div className="space-y-6">
-            <div className="flex items-start">
-              <span className="text-sm font-medium text-gray-500 mr-3">01</span>
-              <span className="text-lg font-medium">Industrial & Logistics</span>
-            </div>
+            {listItems.map((item) => (
+              <div key={item.id}>
+                <div
+                  className="flex items-start group relative cursor-pointer"
+                  onMouseEnter={() => setHoveredItem(item.id)}
+                  onMouseLeave={() => setHoveredItem(null)}
+                >
+                  <span className="text-sm font-medium text-gray-500 mr-3">{item.number}</span>
+                  <span
+                    className={`text-lg font-medium ${item.isLighter ? "text-gray-400" : "text-gray-800"} group-hover:text-blue-500 transition-colors`}
+                  >
+                    {item.text}
+                  </span>
 
-            <div className="border-t border-gray-200"></div>
+                  <div className="absolute -right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
+                    <div className="bg-blue-500 p-2 rounded-md">
+                      <GoArrowUpRight className="h-4 w-4 text-white" />
+                    </div>
+                  </div>
+                </div>
 
-            <div className="flex items-start">
-              <span className="text-sm font-medium text-gray-500 mr-3">02</span>
-              <span className="text-lg font-medium">Science & Technology</span>
-            </div>
-
-            <div className="border-t border-gray-200"></div>
-
-            <div className="flex items-start">
-              <span className="text-sm font-medium text-gray-500 mr-3">03</span>
-              <span className="text-lg font-medium text-gray-400">
-                Alternative Capital Markets
-              </span>
-            </div>
+                {item.id < listItems.length && <div className="border-t border-gray-200 my-6"></div>}
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default ServicesLayout;
+}
