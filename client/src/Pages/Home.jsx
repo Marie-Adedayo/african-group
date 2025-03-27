@@ -1,5 +1,6 @@
 'use client'
 import AboutStats from '../Components/About'
+import PeopleSection from '../Components/People'
 import ResearchGrid from '../Components/research'
 import ServicesLayout from '../Components/Services'
 import Navbar from '../Components/Navbar/Navbar'
@@ -17,6 +18,7 @@ const Home = () => {
         <AboutStats />
         <ServicesLayout />
         <ResearchGrid />
+        <PeopleSection />
         
       </div>
     </main>

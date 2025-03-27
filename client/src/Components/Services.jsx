@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import campaign from "../../Images/campaign.jpg"
+import people from "../../Images/people.jpg"
 
 export default function ModernLayout() {
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const images = [
-    "/Services.webp",
-    "/company.jpg",
+    campaign,
+    people,
     "/placeholder.svg?height=600&width=800&text=Science",
     "/placeholder.svg?height=600&width=800&text=Capital",
   ];
@@ -32,12 +34,12 @@ export default function ModernLayout() {
         </div>
 
         <div className="w-full md:w-1/2 p-6 md:p-12 space-y-6 text-left">
-          <div className="inline-block px-4 py-2 bg-gray-100 text-gray-700 text-xs font-medium tracking-wider uppercase">
+          <div className="inline-block px-4 py-2 bg-[#248232] text-white text-xs font-medium tracking-wider uppercase">
             Discover our services at African Group
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-            A discreet adviser that consistently delivers <span className="text-blue-500">quality advice</span> across
+            A discreet adviser that consistently delivers <span className="text-[#248232]">quality advice</span> across
             the full transaction life cycle.
           </h2>
 
@@ -53,13 +55,13 @@ export default function ModernLayout() {
                 >
                   <span className="text-sm font-medium text-gray-500 mr-3">{item.number}</span>
                   <span
-                    className={`text-lg font-medium ${item.isLighter ? "text-gray-400" : "text-gray-800"} group-hover:text-blue-500 transition-colors`}
+                    className={`text-lg font-medium ${item.isLighter ? "text-gray-400" : "text-gray-800"} group-hover:text-[#248232] transition-colors`}
                   >
                     {item.text}
                   </span>
 
                   <div className="absolute -right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
-                    <div className="bg-blue-500 p-2 rounded-md">
+                    <div className="bg-[#248232] p-2 rounded-md">
                       <GoArrowUpRight className="h-4 w-4 text-white" />
                     </div>
                   </div>
