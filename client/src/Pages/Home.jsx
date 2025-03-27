@@ -2,7 +2,8 @@
 import AboutStats from '../Components/About'
 import ResearchGrid from '../Components/research'
 import ServicesLayout from '../Components/Services'
-import Navbar from '../Components/Navbar'
+import Navbar from '../Components/Navbar/Navbar'
+import Hero  from '../Components/Hero'
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
     <main className="relative">
       <Navbar />
       <div className="w-full">
+        <Hero />
       
         <AboutStats />
         <ServicesLayout />
