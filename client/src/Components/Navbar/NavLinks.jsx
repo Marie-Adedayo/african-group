@@ -18,7 +18,7 @@ const NavLinks = () => {
               }}
             >
               {link.name}
-              <span className="text-xl md:hidden inline">
+              <span className="text-lg md:hidden inline">
                 <ion-icon
                   name={`${
                     heading === link.name ? "chevron-up" : "chevron-down"

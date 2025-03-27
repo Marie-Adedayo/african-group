@@ -20,7 +20,7 @@ const Hero = () => {
   const swiperRef = useRef(null);
 
   return (
-    <div className="bg-blue-400 relative w-full h-screen flex flex-col gap-10 md:gap-60 items-center text-white">
+    <div className="bg-blue-400 relative w-full h-screen flex flex-col gap-10 md:gap-20 items-center text-white">
       {/* Swiper */}
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -54,9 +54,9 @@ const Hero = () => {
         ))}
       </Swiper>
 
-        <div className="w-full flex flex-col md:flex-row gap-4 mx-10 md:mx-18">
+        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 mx-10 md:ml-18">
             {/* Pagination */}
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4 mt-6 ml-10 md:ml-18">
                 {slides.map((slide, index) => (
                 <div
                     key={slide.id}
@@ -70,7 +70,7 @@ const Hero = () => {
                     ></div>
                     </div>
                     {/* Slide Number */}
-                    <em className="text-sm mt-1">{`0${slide.id}`}</em>
+                    <p className="text-sm mt-1">{`0${slide.id}`}</p>
                     {/* Slide Label */}
                     <div className={`text-sm ${index === activeIndex ? "font-bold text-white" : "text-gray-400"}`}>
                     {slide.title}
@@ -80,11 +80,11 @@ const Hero = () => {
             </div>
 
             {/* Navigation Arrows */}
-            <div className="flex gap-6 mt-4">
-                <button className="prev p-2 bg-gray-800 rounded-full hover:bg-gray-700" onClick={() => swiperRef.current?.slidePrev()}>
+            <div className="flex gap-6 mt-4 item-end">
+                <button className="prev p-2 bg-transparent  border-2 rounded-full hover:bg-gray-700" onClick={() => swiperRef.current?.slidePrev()}>
                 <ChevronLeft className="w-6 h-6 text-white" />
                 </button>
-                <button className="next p-2 bg-gray-800 rounded-full hover:bg-gray-700" onClick={() => swiperRef.current?.slideNext()}>
+                <button className="next p-2 bg-transparent border-2 rounded-full hover:bg-gray-700" onClick={() => swiperRef.current?.slideNext()}>
                 <ChevronRight className="w-6 h-6 text-white" />
                 </button>
             </div>
