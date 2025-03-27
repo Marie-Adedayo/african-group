@@ -1,4 +1,5 @@
 import { GoArrowUpRight } from "react-icons/go";
+import Services from "../../Images/Services.webp";
 
 export default function ResearchGrid() {
   const reports = [
@@ -7,7 +8,7 @@ export default function ResearchGrid() {
       category: "INDUSTRIAL & LOGISTICS",
       date: "3 SEPTEMBER 2024",
       title: "The Industrial & Logistics Sustainability Handbook",
-      image: "",
+      image: Services,
       href: "#",
     },
     {
@@ -15,7 +16,7 @@ export default function ResearchGrid() {
       category: "MARKET INTELLIGENCE",
       date: "8 AUGUST 2024",
       title: "Science & Technology Report: Golden Triangle - Q2 2024",
-      image: "",
+      image: Services,
       href: "#",
     },
     {
@@ -23,26 +24,26 @@ export default function ResearchGrid() {
       category: "MARKET INTELLIGENCE",
       date: "2 JULY 2024",
       title: "DTRE Big Box Logistics Report - Q2 2024",
-      image: "",
+      image: Services,
       href: "#",
     },
   ]
 
   return (
-    <div className="bg-[#0e1a33] min-h-screen md:rounded-tl-4xl">
+    <div className="bg-[#040f0f] min-h-screen md:rounded-tl-4xl">
       {/* Top Section */}
       <div className="px-4 sm:px-6 lg:px-8 py-12 text-white max-w-7xl mx-auto">
-        <div className="bg-[#0e1a33] p-6 rounded-lg">
+        <div className="bg-[#040f0f] p-6 rounded-lg">
           <span className="inline-block px-3 py-1 text-xs font-medium bg-gray-700 text-gray-300 rounded uppercase">Market Intelligence</span>
           <h2 className="text-3xl sm:text-4xl font-bold mt-4">
-            <span className="text-blue-400">Research-led</span> and outcome-oriented.
+            <span className="text-[#248232]">Research-led</span> and outcome-oriented.
           </h2>
           <p className="mt-4 text-gray-300 max-w-2xl">
             Numbers only ever tell part of the story. Interpretation and conviction inform application.
             We combine unparalleled depth and breadth of market data with our team’s expertise and on-the-ground intelligence to deliver competitive advantage to our clients.
           </p>
           <div className="mt-6">
-            <a href="#" className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors">
+            <a href="#" className="inline-flex items-center text-[#248232] hover:text-[#248232] transition-colors">
               <GoArrowUpRight className="h-5 w-5 mr-2" /> View all
             </a>
           </div>
@@ -73,7 +74,7 @@ export default function ResearchGrid() {
                   <div className="mt-auto">
                     <a
                       href={report.href}
-                      className="inline-flex items-center justify-center bg-blue-500 hover:bg-blue-600 transition-colors p-2 sm:p-3 rounded-md w-10 h-10"
+                      className="inline-flex items-center justify-center bg-[#248232] hover:bg-[#248232] transition-colors p-2 sm:p-3 rounded-md w-10 h-10"
                     >
                       <GoArrowUpRight className="h-5 w-5 text-white" />
                     </a>
