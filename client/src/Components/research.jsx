@@ -30,31 +30,32 @@ export default function ResearchGrid() {
   ]
 
   return (
-    <div className="bg-[#040f0f] min-h-screen md:rounded-tl-4xl">
+    <div className="bg-[#040f0f] rounded-tl-3xl rounded-tr-3xl md:rounded-tl-4xl">
       {/* Top Section */}
-      <div className="px-4 sm:px-6 lg:px-8 py-12 text-white max-w-7xl mx-auto">
+      <div className="sm:px-6 lg:px-8 py-12 text-white max-w-7xl mx-auto">
         <div className="bg-[#040f0f] p-6 rounded-lg">
-          <span className="inline-block px-3 py-1 text-xs font-medium bg-gray-700 text-gray-300 rounded uppercase">Market Intelligence</span>
+          <span className="flex items-center px-3 py-1 text-xs font-medium bg-gray-700 text-gray-300 rounded uppercase">
+          <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0"></div>Market Intelligence</span>
           <h2 className="text-3xl sm:text-4xl font-bold mt-4">
             <span className="text-[#248232]">Research-led</span> and outcome-oriented.
           </h2>
           <p className="mt-4 text-gray-300 max-w-2xl">
-            Numbers only ever tell part of the story. Interpretation and conviction inform application.
-            We combine unparalleled depth and breadth of market data with our team’s expertise and on-the-ground intelligence to deliver competitive advantage to our clients.
-          </p>
+            Numbers only ever tell part of the story. Interpretation and conviction inform application.</p>
+           <p className="mt-4 text-gray-300 max-w-2xl">We combine unparalleled depth and breadth of market data with our team’s expertise and on-the-ground intelligence to deliver competitive advantage to our clients.</p>
           <div className="mt-6">
             <a href="#" className="inline-flex items-center text-[#248232] hover:text-[#248232] transition-colors">
-              <GoArrowUpRight className="h-5 w-5 mr-2" /> View all
+              <GoArrowUpRight className="h-8 w-8 mr-2 bg-white" /> View all
             </a>
           </div>
         </div>
       </div>
 
       {/* Research Reports Grid */}
-      <div className="py-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+      <div className="pb-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {reports.map((report) => (
             <div key={report.id} className="flex flex-col h-full">
+                        <div className="border-t border-gray-200 pt-4 sm:pt-6"></div>
               <div className="flex flex-col h-full bg-transparent rounded-lg overflow-hidden">
                 <div className="relative w-full pt-[56.25%]">
                   <img

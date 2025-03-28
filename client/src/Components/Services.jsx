@@ -20,7 +20,7 @@ export default function ModernLayout() {
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto p-2">
       <div className="flex flex-col md:flex-row md:items-center">
         <div className="w-full md:w-1/2">
           <div className="relative aspect-[4/3] w-full">
@@ -33,15 +33,16 @@ export default function ModernLayout() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 p-6 md:p-12 space-y-6 text-left">
-          <div className="inline-block px-4 py-2 bg-[#248232] text-white text-xs font-medium tracking-wider uppercase">
+        <div className="w-full md:w-1/2 md:p-12 space-y-6 md:text-left py-10">
+          <div className="flex items-center  px-4 py-2 bg-gray-700 text-white text-xs font-medium tracking-wider uppercase">
+          <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0"></div> 
             Discover our services at African Group
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+          <h3 className="text-[1.5rem] md:text-4xl font-bold text-gray-800 leading-tight tracking-wide">
             A discreet adviser that consistently delivers <span className="text-[#248232]">quality advice</span> across
             the full transaction life cycle.
-          </h2>
+          </h3>
 
           <div className="border-t border-gray-200 my-6"></div>
 
