@@ -5,6 +5,8 @@ import ResearchGrid from '../Components/research'
 import ServicesLayout from '../Components/Services'
 import Navbar from '../Components/Navbar/Navbar'
 import Hero  from '../Components/Hero'
+import LeadershipTeam from '../Components/Leadership'
+import Footer from '../Components/Footer'
 
 
 const Home = () => {
@@ -19,7 +21,8 @@ const Home = () => {
         <ServicesLayout />
         <ResearchGrid />
         <PeopleSection />
-        
+        <LeadershipTeam />
+        <Footer />
       </div>
     </main>
   )
