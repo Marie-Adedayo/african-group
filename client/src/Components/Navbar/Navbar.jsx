@@ -6,8 +6,8 @@ import NavLinks from "./NavLinks";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-blue-400">
-      <div className="flex items-center font-medium justify-around">
+    <nav className="bg-[#071a0a]">
+      <div className="flex items-center font-medium justify-around text-[#FCFFFC] border-b-1 border-white">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <img src={Logo} alt="logo" className="md:cursor-pointer h-9" />
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>

@@ -20,7 +20,8 @@ const Hero = () => {
   const swiperRef = useRef(null);
 
   return (
-    <div className="bg-blue-400 relative w-full h-screen flex flex-col gap-10 md:gap-20 items-center text-white">
+    <div className="bg-[#071a0a] relative w-full min-h-screen flex flex-col gap-10 md:gap-20 items-center text-white">
+        
       {/* Swiper */}
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -40,7 +41,7 @@ const Hero = () => {
                 </div>
                 <div className="mt-4 group flex flex-row">
                     <a href="">
-                        <button className="flex items-center gap-2 text-lg font-semibold bg-blue-600 px-4 py-2  hover:bg-blue-700 transition-all duration-300">
+                        <button className="flex items-center gap-2 text-lg font-semibold bg-[#040f0f] px-4 py-2  hover:bg-[#2ba84a] transition-all duration-300">
                             <FiArrowUpRight className="w-6 h-6 transition-all duration-500 group-hover:rotate-45 group-hover:scale-110" />
                     
                         </button>
@@ -66,7 +67,7 @@ const Hero = () => {
                     {/* Progress bar */}
                     <div className="w-[20rem] h-1 bg-gray-600 rounded-full overflow-hidden">
                     <div
-                        className={`h-full bg-blue-500 transition-all duration-[5000ms] ${index === activeIndex ? "w-full" : "w-0"}`}
+                        className={`h-full bg-[#1a365d] transition-all duration-[5000ms] ${index === activeIndex ? "w-full" : "w-0"}`}
                     ></div>
                     </div>
                     {/* Slide Number */}
