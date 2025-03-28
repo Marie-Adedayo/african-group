@@ -9,10 +9,24 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const slides = [
-  { id: 1, title: "Trusted advice, actionable insights", description: "Stay ahead with expert opinions and strategies for growth.", button: "Click to read" },
-  { id: 2, title: "DTRE 2025 Outlook", description: "An in-depth look at market trends and forecasts for 2025.", button: "Click to read" },
-  { id: 3, title: "DTRE Big Box Logistics Report - Q4 2024", description: "Discover the latest logistics data and key takeaways.", button: "Click to read" },
-
+  {
+    id: 1,
+    title: "Trusted advice, actionable insights",
+    description: "Stay ahead with expert opinions and strategies for growth.",
+    button: "Click to read",
+  },
+  {
+    id: 2,
+    title: "DTRE 2025 Outlook",
+    description: "An in-depth look at market trends and forecasts for 2025.",
+    button: "Click to read",
+  },
+  {
+    id: 3,
+    title: "DTRE Big Box Logistics Report - Q4 2024",
+    description: "Discover the latest logistics data and key takeaways.",
+    button: "Click to read",
+  },
 ];
 
 const Hero = () => {
@@ -20,8 +34,7 @@ const Hero = () => {
   const swiperRef = useRef(null);
 
   return (
-    <div className="bg-[#071a0a] relative w-full min-h-screen flex flex-col gap-10 md:gap-20 items-center text-white">
-        
+    <div className="bg-[#071a0a] relative w-full min-h-screen flex flex-col gap-12 md:gap-20 items-center text-white pl-3 md-">
       {/* Swiper */}
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -33,65 +46,79 @@ const Hero = () => {
         className="w-full"
       >
         {slides.map((slide) => (
-          <SwiperSlide key={slide.id} className="flex flex-col items-center text-center md:items-start md:text-start mt-10">
-            <div className="mx-10 md:mx-18">
-                <div>
-                    <h1 className="text-5xl w-[400px] font-normal">{slide.title}</h1>
-                    <p className="mt-2">{slide.description}</p>
-                </div>
-                <div className="mt-4 group flex flex-row">
-                    <a href="">
-                        <button className="flex items-center gap-2 text-lg font-semibold bg-[#040f0f] px-4 py-2  hover:bg-[#2ba84a] transition-all duration-300">
-                            <FiArrowUpRight className="w-6 h-6 transition-all duration-500 group-hover:rotate-45 group-hover:scale-110" />
-                    
-                        </button>
-                        {slide.button}
-                    </a>
-  
-                </div>
+          <SwiperSlide
+            key={slide.id}
+            className="flex flex-col items-start text-start mt-10 gap-8 md:gap-10"
+          >
+            <div className="mx-4 md:mx-10">
+              <div>
+                <h1 className="text-4xl md:text-5xl w-[70%] md:w-[400px] font-normal">
+                  {slide.title}
+                </h1>
+                <p className="mt-2 text-sm md:text-base w-[70%] md:w-[400px]">{slide.description}</p>
+              </div>
+              <div className="mt-4 group flex flex-row">
+                <a href="">
+                  <button className="flex items-center gap-2 text-sm md:text-lg font-semibold bg-[#040f0f] px-4 py-2 group-hover:bg-[#2ba84a] transition-all duration-300">
+                    <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:rotate-45 group-hover:scale-110" />
+                  </button>
+                  {slide.button}
+                </a>
+              </div>
             </div>
-
           </SwiperSlide>
         ))}
       </Swiper>
 
-        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-10 mx-10 md:ml-18">
+      <div className="w-full flex flex-col md:flex-row gap-4 md:gap-20">
             {/* Pagination */}
-            <div className="flex gap-4 mt-6 ml-10 md:ml-18">
-                {slides.map((slide, index) => (
+            <div className=" gap-4 mt-6 ml-4 md:ml-10 hidden md:flex">
+            {slides.map((slide, index) => (
                 <div
-                    key={slide.id}
-                    className="flex flex-col cursor-pointer"
-                    onClick={() => swiperRef.current?.slideToLoop(index)}
+                key={slide.id}
+                className="flex flex-col cursor-pointer"
+                onClick={() => swiperRef.current?.slideToLoop(index)}
                 >
-                    {/* Progress bar */}
-                    <div className="w-[20rem] h-1 bg-gray-600 rounded-full overflow-hidden">
+                {/* Progress bar */}
+                <div className="w-40 md:w-[20rem] h-1 bg-gray-600 rounded-full overflow-hidden">
                     <div
-                        className={`h-full bg-[#1a365d] transition-all duration-[5000ms] ${index === activeIndex ? "w-full" : "w-0"}`}
+                    className={`h-full bg-[#1a365d] transition-all duration-[5000ms] ${
+                        index === activeIndex ? "w-full" : "w-0"
+                    }`}
                     ></div>
-                    </div>
-                    {/* Slide Number */}
-                    <p className="text-sm mt-1">{`0${slide.id}`}</p>
-                    {/* Slide Label */}
-                    <div className={`text-sm ${index === activeIndex ? "font-bold text-white" : "text-gray-400"}`}>
-                    {slide.title}
-                    </div>
                 </div>
-                ))}
+                {/* Slide Number */}
+                <p className="text-xs md:text-sm mt-1">{`0${slide.id}`}</p>
+                {/* Slide Label */}
+                <div
+                    className={`text-xs md:text-sm ${
+                    index === activeIndex
+                        ? "font-bold text-white"
+                        : "text-gray-400"
+                    }`}
+                >
+                    {slide.title}
+                </div>
+                </div>
+            ))}
             </div>
 
             {/* Navigation Arrows */}
-            <div className="flex gap-6 mt-4 item-end">
-                <button className="prev p-2 bg-transparent  border-2 rounded-full hover:bg-gray-700" onClick={() => swiperRef.current?.slidePrev()}>
+            <div className="flex gap-6 mt-96 md:mt-4 items-baseline md:item-end">
+            <button
+                className="prev p-2 bg-transparent border-2 rounded-full hover:bg-gray-700"
+                onClick={() => swiperRef.current?.slidePrev()}
+            >
                 <ChevronLeft className="w-6 h-6 text-white" />
-                </button>
-                <button className="next p-2 bg-transparent border-2 rounded-full hover:bg-gray-700" onClick={() => swiperRef.current?.slideNext()}>
+            </button>
+            <button
+                className="next p-2 bg-transparent border-2 rounded-full hover:bg-gray-700"
+                onClick={() => swiperRef.current?.slideNext()}
+            >
                 <ChevronRight className="w-6 h-6 text-white" />
-                </button>
+            </button>
             </div>
       </div>
-
-      
     </div>
   );
 };
