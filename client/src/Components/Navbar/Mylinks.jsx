@@ -4,7 +4,7 @@ export const links = [
     description:
       "Delivering tailored insights into portfolio risks and mitigation strategies to protect asset values and support clients throughout the entire transaction lifecycle.",
     submenu: true,
-    link: "/service",
+    link: "/about",
     sublinks: [
       {
         Head: "Lorem Ipsum",

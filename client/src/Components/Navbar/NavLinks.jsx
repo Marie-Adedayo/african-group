@@ -35,31 +35,31 @@ const NavLinks = () => {
 
             {/* Desktop Dropdown */}
             {link.submenu && link.sublinks && (
-              <div className="absolute top-20 hidden group-hover:md:block hover:md:block z-50">
-                <div className="grid grid-cols-2 gap-6 p-6 bg-white shadow-lg rounded-lg">
+              <div className="absolute top-20 hidden group-hover:md:block hover:md:block w-full left-0 z-50">
+                <div className="grid grid-cols-2 p-6 bg-white">
                   {/* First Section */}
-                  <div className="flex flex-col space-y-6">
-                    <h1 className="text-2xl font-bold">{link.name}</h1>
-                    <p className="text-gray-700">{link.description}</p>
-                    <div className="mt-4 group flex flex-row">
-                      <a href={link.link}>
-                        <button className="flex items-center gap-2 text-sm text-white md:text-lg font-semibold bg-[#040f0f] px-4 py-2 group-hover:bg-[#2ba84a] transition-all duration-300">
-                          View All
-                          <FiArrowUpRight className="w-4 h-4 md:w-6 md:h-6 transition-all duration-500 group-hover:rotate-45 group-hover:scale-110" />
+                  <div className=" flex flex-col space-y-6">
+                    <h1 className="text-5xl text-[#071a0a] font-bold">{link.name}</h1>
+                    <p className="text-gray-700 text-sm w-[300px]">{link.description}</p>
+                    <div className="mt-4 group ">
+                      <a href={link.link} className="text-[#071a0a ] flex flex-row">
+                        <button className="flex items-center gap-2 text-sm  md:text-lg font-semibold bg-[#040f0f] px-4 py-2 group-hover:bg-[#2ba84a] transition-all duration-300">
+                         <FiArrowUpRight className="w-4 h-4 md:w-6 md:h-6 transition-all duration-500 group-hover:rotate-45" />
                         </button>
+                        View All
                       </a>
                     </div>
                   </div>
 
                   {/* Second Section */}
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className=" grid grid-cols-2 gap-4">
                     {link.sublinks.map((sublink) => (
                       <div
                         key={sublink.Head}
-                        className="bg-gray-100 shadow-md p-4 rounded-lg"
+                        className="bg-[#dce4dc] text-[#071a0a] px-8 py-6 hover:bg-[#071a0a] hover:text-[#FCFFFC]"
                       >
                         <h2 className="text-lg font-semibold">{sublink.Head}</h2>
-                        <p className="text-sm text-gray-700 mt-2">
+                        <p className="text-sm  mt-2">
                           {sublink.name}
                         </p>
                       </div>
