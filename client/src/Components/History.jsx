@@ -74,8 +74,8 @@ const History = () => {
             </button>
           </div>
         </div>
-
-        {/* Swiper Section */}
+{/* 
+        
         <Swiper
           modules={[Navigation]}
           navigation={{ nextEl: ".next-button", prevEl: ".prev-button" }}
@@ -90,7 +90,7 @@ const History = () => {
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-start gap-4 bg-[#071a0a] text-[#FCFFFC] shadow-md">
-                {/* Slide Content */}
+            
                 <div className="">
                   <img
                     src={slide.image}
@@ -98,7 +98,7 @@ const History = () => {
                     className="rounded-md w-[200px] h-[200px] object-cover"
                   />
                 </div>
-                {/* Text Content */}
+                
                 <div className="flex flex-col justify-center">
                   <div className="text-gray-500 font-medium">{slide.date}</div>
                   <p className="text-base font-light text-gray-700 mt-2">{slide.text}</p>
@@ -106,7 +106,8 @@ const History = () => {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> 
+        */}
       </div>
     </>
   );
