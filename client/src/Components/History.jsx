@@ -1,56 +1,57 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper';
-import Picture from "../../Images/picture.jpg"; 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import company from "../../Images/company.jpg";
+import picture from "../../Images/picture.jpg";
 
 const History = () => {
   const slidesData = [
     {
-      image: Picture,
-      date: 'April 10, 2025',
-      text: 'This is a brief description for slide 1.',
+      image: company,
+      date: "April 10, 2025",
+      text: "This is a brief description for slide 1.",
     },
     {
-      image: Picture, 
-      date: 'April 11, 2025',
-      text: 'This is a brief description for slide 2.',
+      image: picture,
+      date: "April 11, 2025",
+      text: "This is a brief description for slide 2.",
     },
     {
-        image: Picture,
-        date: 'April 10, 2025',
-        text: 'This is a brief description for slide 1.',
-      },
-      {
-        image: Picture, 
-        date: 'April 11, 2025',
-        text: 'This is a brief description for slide 2.',
-      },
-      {
-        image: Picture,
-        date: 'April 10, 2025',
-        text: 'This is a brief description for slide 1.',
-      },
-      {
-        image: Picture, 
-        date: 'April 11, 2025',
-        text: 'This is a brief description for slide 2.',
-      },
-      {
-        image: Picture,
-        date: 'April 10, 2025',
-        text: 'This is a brief description for slide 1.',
-      },
-      {
-        image: Picture, 
-        date: 'April 11, 2025',
-        text: 'This is a brief description for slide 2.',
-      },
+      image: company,
+      date: "April 10, 2025",
+      text: "This is a brief description for slide 1.",
+    },
+    {
+      image: picture,
+      date: "April 11, 2025",
+      text: "This is a brief description for slide 2.",
+    },
+    {
+      image: company,
+      date: "April 10, 2025",
+      text: "This is a brief description for slide 1.",
+    },
+    {
+      image: picture,
+      date: "April 11, 2025",
+      text: "This is a brief description for slide 2.",
+    },
+    {
+      image: company,
+      date: "April 10, 2025",
+      text: "This is a brief description for slide 1.",
+    },
+    {
+      image: picture,
+      date: "April 11, 2025",
+      text: "This is a brief description for slide 2.",
+    },
   ];
 
   return (
     <>
-      <div className="flex flex-col gap-4 md:gap-10">
+      <div className="flex flex-col gap-4 md:gap-10 bg-[#071a0a] text-[#FCFFFC]">
         {/* First Part: Title and Navigation */}
         <div className="flex flex-col md:flex-row justify-between px-4 py-8 md:px-8 items-center">
           <div className="text-left">
@@ -65,10 +66,10 @@ const History = () => {
 
           {/* Navigation Arrows */}
           <div className="flex gap-4 mt-4 md:mt-0">
-            <button className="prev-button text-xl rounded-full border-[1px] border-[#FCFFFC] px-4 py-2">
+            <button className="prev-button text-xl rounded-full border-[1px] border-[#f1f1f1] px-3 py-2 hover:border-[#FCFFFC]">
               ←
             </button>
-            <button className="next-button text-xl rounded-full border-[1px] border-[#FCFFFC] px-4 py-2">
+            <button className="next-button text-xl rounded-full border-[1px] border-[#f1f1f1] px-3 py-2 hover:border-[#FCFFFC]">
               →
             </button>
           </div>
@@ -77,25 +78,31 @@ const History = () => {
         {/* Swiper Section */}
         <Swiper
           modules={[Navigation]}
-          navigation={{ nextEl: '.next-button', prevEl: '.prev-button' }}
+          navigation={{ nextEl: ".next-button", prevEl: ".prev-button" }}
           spaceBetween={15}
           slidesPerView={1}
           breakpoints={{
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
           }}
           className="px-4 md:px-8"
         >
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-start gap-4 bg-white shadow-md p-6 rounded-lg overflow-hidden">
-                <img
-                  src={slide.image} 
-                  alt={`Slide ${index + 1}`}
-                  className="rounded-md w-full h-48 object-cover"
-                />
-                <div className="text-gray-500 font-medium">{slide.date}</div>
-                <p className="text-base font-light text-gray-700">{slide.text}</p>
+              <div className="flex flex-col items-start gap-4 bg-[#071a0a] text-[#FCFFFC] shadow-md">
+                {/* Slide Content */}
+                <div className="">
+                  <img
+                    src={slide.image}
+                    alt={`Slide ${index + 1}`}
+                    className="rounded-md w-[200px] h-[200px] object-cover"
+                  />
+                </div>
+                {/* Text Content */}
+                <div className="flex flex-col justify-center">
+                  <div className="text-gray-500 font-medium">{slide.date}</div>
+                  <p className="text-base font-light text-gray-700 mt-2">{slide.text}</p>
+                </div>
               </div>
             </SwiperSlide>
           ))}
