@@ -1,9 +1,9 @@
-import { GoArrowUpRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 export default function AboutStats() {
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 xl:gap-24">
+    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-64">
         {/* Left Column */}
         <div className="lg:w-1/2 space-y-4 sm:space-y-6 md:text-left ">
           <div className="flex items-center">
@@ -13,20 +13,44 @@ export default function AboutStats() {
             </span>
           </div>
 
-          <h2 className="text-[1.9rem] sm:text-3xl md:text-[3.2rem] lg:text-[3.5rem] font-medium text-[#1a365d] leading-tight tracking-tighter">
+          <h2 className="text-[1.9rem] sm:text-3xl md:text-[3.2rem] lg:text-[3rem] font-medium text-[#1a365d] leading-tight tracking-tighter">
             Helping clients navigate a complex market by executing real estate solutions that ensure success.
           </h2>
 
-          <div className="pt-2">
+          {/* <div className="pt-2">
             <button className="flex items-center bg-[#248232] hover:bg-[#248232] transition-colors text-white px-3 py-2 sm:px-4 sm:py-2 rounded text-sm sm:text-base">
               <GoArrowUpRight className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
               <span>About African Group</span>
             </button>
-          </div>
+          </div> */}
+           <div>
+          <Link
+            to="/about"
+            className="inline-flex items-center gap-4 text-inherit text-base font-normal no-underline bg-transparent border-none outline-none shadow-none cursor-pointer appearance-none hover:opacity-80 flex-row-reverse justify-end"
+          >
+            <span>About DTRE</span>
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" className="w-5 h-5">
+                <path
+                  fill="currentColor"
+                  d="M803.729 129.203h-666.868v-129.203h886.846v886.846h-129.203v-665.698l-802.851 802.851-91.36-91.361 803.437-803.437z"
+                />
+              </svg>
+            </i>
+          </Link>
+        </div>
         </div>
 
+       
+
+        {/* <a class="Button_button__M6NfZ Button_reversed__B8bOe" target="" href="/about">
+        <span><span data-title="About DTRE"><span>About DTRE</span></span></span><i>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+          <path fill="currentColor" d="M803.729 129.203h-666.868v-129.203h886.846v886.846h-129.203v-665.698l-802.851 802.851-91.36-91.361 803.437-803.437z"></path>
+          </svg></i></a> */}
+
         {/* Right Column - Stats */}
-        <div className="lg:w-1/2 space-y-4 sm:space-y-6 mt-6 lg:mt-0 md:text-left">
+        <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0 md:text-left">
           {/* Stat 1 */}
           <div className="border-t border-gray-200 pt-4 sm:pt-6">
             <div className="text-[2.9rem] md:text-7xl sm:text-5xl font-medium text-[#248232] mb-1 sm:mb-2 tracking-tighter align-middle">
