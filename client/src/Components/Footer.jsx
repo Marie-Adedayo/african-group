@@ -105,10 +105,12 @@ export default function Footer() {
             </div>
             <div>
               <h3 className="text-lg font-medium mb-4">Social Media</h3>
-                <Link to="/terms" className="text-sm hover:underline"><FaInstagram /></Link>
-                <Link to="/terms" className="text-sm hover:underline"><FaFacebook /></Link>
-                <Link to="/terms" className="text-sm hover:underline"><FaTwitter /></Link>
-                <Link to="/terms" className="text-sm hover:underline"><FaLinkedin /></Link>
+                <div className="md:flex gap-2 items-center md:flex-row">
+                  <Link to="/terms" className="text-2xl hover:underline"><FaInstagram /></Link>
+                  <Link to="/terms" className="text-2xl hover:underline"><FaFacebook /></Link>
+                  <Link to="/terms" className="text-2xl hover:underline"><FaTwitter /></Link>
+                  <Link to="/terms" className="text-2xl hover:"><FaLinkedin /></Link>
+                </div>  
             </div>
           </div>
         </div>
