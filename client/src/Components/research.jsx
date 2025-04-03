@@ -32,21 +32,25 @@ export default function ResearchGrid() {
   return (
     <div className="bg-[#040f0f] rounded-tl-3xl rounded-tr-3xl md:rounded-tl-4xl">
       {/* Top Section */}
-      <div className="sm:px-6 lg:px-8 py-12 text-white max-w-7xl mx-auto">
-        <div className="bg-[#040f0f] p-6 rounded-lg">
-          <span className="flex items-center px-3 py-1 text-xs font-medium bg-gray-700 text-gray-300 rounded uppercase">
+      <div className="sm:px-6 lg:px-8 py-12 text-white  mx-auto">
+        <div className="bg-[#040f0f] p-6 rounded-lg md:flex md:flex-row md:justify-between md:gap-[8rem]">
+          <div className="md:align-text-top">
+          <span className="flex items-center px-3 py-1 text-xs font-medium bg-gray-700 text-gray-300 rounded uppercase w-[20rem]">
           <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0"></div>Market Intelligence</span>
           <h2 className="text-3xl sm:text-4xl font-bold mt-4">
             <span className="text-[#248232]">Research-led</span> and outcome-oriented.
           </h2>
-          <p className="mt-4 text-gray-300 max-w-2xl">
-            Numbers only ever tell part of the story. Interpretation and conviction inform application.</p>
-           <p className="mt-4 text-gray-300 max-w-2xl">We combine unparalleled depth and breadth of market data with our team’s expertise and on-the-ground intelligence to deliver competitive advantage to our clients.</p>
-          <div className="mt-6">
-            <a href="#" className="inline-flex items-center text-[#248232] hover:text-[#248232] transition-colors">
-              <GoArrowUpRight className="h-8 w-8 mr-2 bg-white" /> View all
-            </a>
           </div>
+         <div>
+            <p className="mt-4 text-gray-300 max-w-2xl">
+                Numbers only ever tell part of the story. Interpretation and conviction inform application.</p>
+              <p className="mt-4 text-gray-300 max-w-2xl">We combine unparalleled depth and breadth of market data with our team’s expertise and on-the-ground intelligence to deliver competitive advantage to our clients.</p>
+              <div className="mt-6">
+                <a href="#" className="inline-flex items-center text-[#248232] hover:text-[#248232]">
+                  <GoArrowUpRight className="h-8 w-8 mr-2 bg-white transition-all duration-500 hover:rotate-45 hover:scale-110" /> View all
+              </a>
+          </div>
+         </div>
         </div>
       </div>
 
