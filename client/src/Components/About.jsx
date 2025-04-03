@@ -28,7 +28,7 @@ export default function AboutStats() {
             to="/about"
             className="inline-flex items-center gap-4 text-inherit text-base font-normal no-underline bg-transparent border-none outline-none shadow-none cursor-pointer appearance-none hover:opacity-80 flex-row-reverse justify-end"
           >
-            <span>About DTRE</span>
+            <span>About African Group</span>
             <i>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" className="w-5 h-5">
                 <path
