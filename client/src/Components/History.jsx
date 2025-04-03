@@ -2,20 +2,50 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper';
- 
+import Picture from "../../Images/picture.jpg"; 
 
 const History = () => {
   const slidesData = [
     {
-
+      image: Picture,
       date: 'April 10, 2025',
       text: 'This is a brief description for slide 1.',
     },
     {
-
+      image: Picture, 
       date: 'April 11, 2025',
       text: 'This is a brief description for slide 2.',
     },
+    {
+        image: Picture,
+        date: 'April 10, 2025',
+        text: 'This is a brief description for slide 1.',
+      },
+      {
+        image: Picture, 
+        date: 'April 11, 2025',
+        text: 'This is a brief description for slide 2.',
+      },
+      {
+        image: Picture,
+        date: 'April 10, 2025',
+        text: 'This is a brief description for slide 1.',
+      },
+      {
+        image: Picture, 
+        date: 'April 11, 2025',
+        text: 'This is a brief description for slide 2.',
+      },
+      {
+        image: Picture,
+        date: 'April 10, 2025',
+        text: 'This is a brief description for slide 1.',
+      },
+      {
+        image: Picture, 
+        date: 'April 11, 2025',
+        text: 'This is a brief description for slide 2.',
+      },
   ];
 
   return (
@@ -59,11 +89,11 @@ const History = () => {
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-start gap-4 bg-white shadow-md p-6 rounded-lg overflow-hidden">
-{/*                 <img
+                <img
                   src={slide.image} 
                   alt={`Slide ${index + 1}`}
                   className="rounded-md w-full h-48 object-cover"
-                /> */}
+                />
                 <div className="text-gray-500 font-medium">{slide.date}</div>
                 <p className="text-base font-light text-gray-700">{slide.text}</p>
               </div>
