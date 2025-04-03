@@ -34,7 +34,7 @@ const Hero = () => {
   const swiperRef = useRef(null);
 
   return (
-    <div className="bg-[#071a0a] relative w-full min-h-screen flex flex-col gap-12 md:gap-20 items-center text-white pl-3 md-">
+    <div className="bg-[#071a0a] relative w-full min-h-screen flex flex-col gap-12 md:gap-20 items-center text-white pl-3 pt-6 md:pt-16">
       {/* Swiper */}
       <Swiper
         modules={[Navigation, Autoplay]}
