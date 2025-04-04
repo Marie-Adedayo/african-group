@@ -57,12 +57,12 @@ const Hero = () => {
                 </h1>
                 <p className="mt-2 text-sm md:text-base w-[70%] md:w-[400px]">{slide.description}</p>
               </div>
-              <div className="mt-4 group flex flex-row">
-                <a href="">
+              <div className="mt-4 group ">
+                <a href="/" className="flex flex-row gap-2">
                   <button className="flex items-center gap-2 text-sm md:text-lg font-semibold bg-[#040f0f] px-4 py-2 group-hover:bg-[#2ba84a] transition-all duration-300">
                     <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:rotate-45 group-hover:scale-110" />
                   </button>
-                  {slide.button}
+                  <span className="mt-2">{slide.button}</span> 
                 </a>
               </div>
             </div>

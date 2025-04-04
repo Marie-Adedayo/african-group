@@ -35,7 +35,10 @@ const Navbar = () => {
       <div className="flex items-center font-medium justify-between text-[#FCFFFC] border-b border-white px-4 md:px-10">
         {/* Logo and Menu Toggle */}
         <div className="md:w-auto w-full flex justify-between">
-         <img src="/Images/logo.jpg" alt="logo" className="md:cursor-pointer h-9" />
+          <a href="/">
+            <img src="/Images/logo.jpg" alt="logo" className="md:cursor-pointer h-9" />
+          </a>
+        
           <div
             className="z-50 md:z-0 text-3xl md:hidden"
             onClick={() => setOpen(!open)}
