@@ -109,7 +109,7 @@ const teamMembers = [
 
 export default function LeadershipTeam() {
   return (
-    <div className="w-full max-w-full mx-auto px-0 py-12"> {/* Removed padding */}
+    <div className="w-full max-w-full mx-auto px-0 py-12"> 
       <div className="mb-8 text-left pl-8"> {/* Aligned left */}
         <span className="inline-block bg-[#e6f0f5] text-[#2c5282] py-1 px-3 text-sm font-medium tracking-wider">
           LEADERSHIP TEAM
@@ -130,7 +130,7 @@ export default function LeadershipTeam() {
         {teamMembers.map((member) => (
           <SwiperSlide key={member.id} className="pb-8">
             <div className="flex flex-col h-full">
-              <div className="relative w-full h-[60vh] overflow-hidden"> {/* Reduced image size */}
+              <div className="relative w-full h-[30vh] md:h-[40vh] overflow-hidden"> {/* Reduced image size */}
                 <img
                   src={member.image}
                   alt={member.name}

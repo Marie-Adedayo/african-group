@@ -24,30 +24,26 @@ export default function AboutStats() {
             </button>
           </div> */}
            <div>
-          <Link
-            to="/about"
-            className="inline-flex items-center gap-4 text-inherit text-base font-normal no-underline bg-transparent border-none outline-none shadow-none cursor-pointer appearance-none hover:opacity-80 flex-row-reverse justify-end"
-          >
-            <span>About African Group</span>
-            <i>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" className="w-5 h-5">
-                <path
-                  fill="currentColor"
-                  d="M803.729 129.203h-666.868v-129.203h886.846v886.846h-129.203v-665.698l-802.851 802.851-91.36-91.361 803.437-803.437z"
-                />
-              </svg>
-            </i>
-          </Link>
+            <Link
+              to="/about"
+              className="group inline-flex items-center gap-4 text-inherit text-base font-normal no-underline bg-transparent border-none outline-none shadow-none cursor-pointer appearance-none hover:opacity-80 flex-row-reverse justify-end"
+            >
+              <span className="text-[1rem]">About African Group</span>
+              <i className="p-4 bg-[#248232] transition-transform duration-300 group-hover:rotate-45">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1024 1024"
+                  className="w-5 h-5 text-black"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M803.729 129.203h-666.868v-129.203h886.846v886.846h-129.203v-665.698l-802.851 802.851-91.36-91.361 803.437-803.437z"
+                  />
+                </svg>
+              </i>
+            </Link>
+          </div>
         </div>
-        </div>
-
-       
-
-        {/* <a class="Button_button__M6NfZ Button_reversed__B8bOe" target="" href="/about">
-        <span><span data-title="About DTRE"><span>About DTRE</span></span></span><i>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-          <path fill="currentColor" d="M803.729 129.203h-666.868v-129.203h886.846v886.846h-129.203v-665.698l-802.851 802.851-91.36-91.361 803.437-803.437z"></path>
-          </svg></i></a> */}
 
         {/* Right Column - Stats */}
         <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0 md:text-left">
