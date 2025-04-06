@@ -99,7 +99,7 @@ const NavLinks = () => {
                   >
                     {sublink.sublink &&
                       sublink.sublink.map((item) => (
-                        <li key={item.name} className="py-2 text-sm">
+                        <li key={item.name} className="py-2 text-sm ">
                           <Link to={item.link}>{item.name}</Link>
                         </li>
                       ))}

@@ -35,10 +35,7 @@ const Navbar = () => {
       <div className="flex items-center font-medium justify-between text-[#FCFFFC] border-b border-white px-4 md:px-10">
         {/* Logo and Menu Toggle */}
         <div className="md:w-auto w-full flex justify-between">
-          <a href="/">
-            <img src="/Images/logo.jpg" alt="logo" className="md:cursor-pointer h-9" />
-          </a>
-        
+         <img src="/Images/logo.jpg" alt="logo" className="md:cursor-pointer h-9" />
           <div
             className="z-50 md:z-0 text-3xl md:hidden"
             onClick={() => setOpen(!open)}
@@ -83,7 +80,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div>
           <ul
-            className={`fixed md:hidden bg-[#071a0a] pt-14 w-full top-0 bottom-0 overflow-y-auto z-40 duration-500 ${
+            className={`fixed md:hidden bg-[#071a0a] pt-14 w-full top-0 text-[#FCFFFC] overflow-y-auto z-40 duration-500 ${
               open ? "left-0" : "left-[-100%]"
             }`}
           >
