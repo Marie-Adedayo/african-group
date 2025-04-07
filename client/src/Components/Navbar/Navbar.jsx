@@ -80,7 +80,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div>
           <ul
-            className={`fixed md:hidden bg-[#071a0a] pt-14 w-full top-0 bottom-0 overflow-y-auto z-40 duration-500 ${
+            className={`fixed md:hidden bg-[#071a0a] pt-14 w-full top-0 text-[#FCFFFC] overflow-y-auto z-40 duration-500 ${
               open ? "left-0" : "left-[-100%]"
             }`}
           >

@@ -48,21 +48,21 @@ const Hero = () => {
         {slides.map((slide) => (
           <SwiperSlide
             key={slide.id}
-            className="flex flex-col items-start text-start mt-10 gap-8 md:gap-10"
+            className="flex flex-col items-start text-start mt-20 gap-8 md:gap-10"
           >
             <div className="mx-4 md:mx-10">
               <div>
-                <h1 className="text-4xl md:text-5xl w-[70%] md:w-[400px] font-normal">
+                <h1 className="text-4xl md:text-6xl w-[70%] md:w-[400px] font-normal">
                   {slide.title}
                 </h1>
                 <p className="mt-2 text-sm md:text-base w-[70%] md:w-[400px]">{slide.description}</p>
               </div>
-              <div className="mt-4 group flex flex-row">
-                <a href="">
+              <div className="mt-4 group ">
+                <a href="/" className="flex flex-row gap-2">
                   <button className="flex items-center gap-2 text-sm md:text-lg font-semibold bg-[#040f0f] px-4 py-2 group-hover:bg-[#2ba84a] transition-all duration-300">
                     <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:rotate-45 group-hover:scale-110" />
                   </button>
-                  {slide.button}
+                  <span className="mt-2">{slide.button}</span> 
                 </a>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Hero = () => {
         ))}
       </Swiper>
 
-      <div className="w-full flex flex-col md:flex-row gap-4 md:gap-20">
+      <div className="w-full flex flex-col md:flex-row gap-4 md:gap-20 justify-baseline">
             {/* Pagination */}
             <div className=" gap-4 mt-6 ml-4 md:ml-10 hidden md:flex">
             {slides.map((slide, index) => (
@@ -82,7 +82,7 @@ const Hero = () => {
                 {/* Progress bar */}
                 <div className="w-40 md:w-[20rem] h-1 bg-gray-600 rounded-full overflow-hidden">
                     <div
-                    className={`h-full bg-[#1a365d] transition-all duration-[5000ms] ${
+                    className={`h-full bg-[#1a365d] transition-all duration-[10000ms] ${
                         index === activeIndex ? "w-full" : "w-0"
                     }`}
                     ></div>

@@ -42,14 +42,15 @@ const NavLinks = () => {
                     <h1 className="text-5xl text-[#071a0a] font-bold">{link.name}</h1>
                     <p className="text-gray-700 text-sm w-[300px]">{link.description}</p>
                     <div className="mt-4 group ">
-                      <a href={link.link} className="text-[#071a0a] text-xl font-light flex flex-row gap-3">
-                        <span className="flex items-center text-sm  md:text-lg font-semibold bg-[#040f0f] px-2 py-1 group-hover:bg-[#2ba84a] transition-all duration-300">
-                         <FiArrowUpRight className="w-4 h-4 md:w-6 md:h-6 transition-all duration-500 group-hover:rotate-45" />
-                        </span>
-                        View All
-                      </a> 
+                      <a href="/about" className="flex flex-row gap-2">
+                        <button className="flex items-center gap-2 text-sm md:text-lg font-semibold bg-[#040f0f] px-4 py-2 group-hover:bg-[#2ba84a] transition-all duration-300">
+                          <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:rotate-45 group-hover:scale-110" />
+                        </button>
+                        <span className="mt-2 text-[#071a0a]">View All</span> 
+                      </a>
                     </div>
                   </div>
+
 
                   {/* Second Section */}
                   <div className=" grid grid-cols-2 gap-4">
@@ -98,7 +99,7 @@ const NavLinks = () => {
                   >
                     {sublink.sublink &&
                       sublink.sublink.map((item) => (
-                        <li key={item.name} className="py-2 text-sm">
+                        <li key={item.name} className="py-2 text-sm ">
                           <Link to={item.link}>{item.name}</Link>
                         </li>
                       ))}

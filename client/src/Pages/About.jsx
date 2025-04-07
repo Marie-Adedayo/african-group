@@ -5,6 +5,8 @@ import OurStory from "../Components/OurStory";
 import OurValue from "../Components/OurValue";
 import CreateValue from "../Components/CreateValue";
 import History from "../Components/History";
+import CardWithImage from "../Components/Card";
+import Footer from "../Components/Footer";
 
 
 
@@ -18,8 +20,10 @@ const About = () => {
             < OurStory/>
             < OurValue/>
             < History/>
-            < CreateValue/>        
-        
+            < CreateValue/>    
+            <CardWithImage/>    
+            <Footer/>
+
 
         </>
 

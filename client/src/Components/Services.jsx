@@ -33,10 +33,9 @@ export default function ModernLayout() {
           </div>
         </div>
 
-        {/* List Section */}
-        <div className="w-full md:w-1/2 md:p-12 space-y-6 md:text-left py-10 md:align-middle md:items-center">
-          <div className="flex items-center px-4 py-2 bg-gray-700 text-white text-xs font-medium tracking-wider uppercase w-[21rem] md:w-[28rem]">
-            <div className="bg-[#248232] w-2 h-2 mr-2"></div>
+        <div className="w-full md:w-1/2 md:p-12 space-y-6 md:text-left py-10">
+          <div className="flex items-center px-4 py-2 bg-gray-700 text-white text-xs font-medium tracking-wider uppercase w-full md:w-[28rem]">
+            <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0"></div>
             Discover our services at African Group
           </div>
 
