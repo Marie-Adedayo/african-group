@@ -7,7 +7,7 @@ import Navbar from '../Components/Navbar/Navbar'
 import Hero  from '../Components/Hero'
 import LeadershipTeam from '../Components/Leadership'
 import Footer from '../Components/Footer'
-import NewsSection from '../Data/News'
+import NewsSection from '../Components/NewsSection'
 
 
 const Home = () => {
