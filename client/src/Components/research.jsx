@@ -1,5 +1,7 @@
 import { GoArrowUpRight } from "react-icons/go";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion, useAnimation } from "framer-motion"; // Import Framer Motion
+import { useInView } from "react-intersection-observer"; // For scroll effects
+import { useEffect } from "react";
 import Services from "../../Images/Services.webp";
 
 export default function ResearchGrid() {
@@ -29,6 +31,16 @@ export default function ResearchGrid() {
       href: "#",
     },
   ];
+
+  // Scroll animation hooks
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.2 }); // Trigger when 20% of the element is visible
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   return (
     <motion.div
@@ -66,11 +78,16 @@ export default function ResearchGrid() {
               <motion.a
                 href="#"
                 className="inline-flex items-center text-[#248232] hover:text-[#248232]"
-                whileHover={{ scale: 1.1, rotate: 10 }} // Scale and rotate on hover
                 whileTap={{ scale: 0.9 }} // Shrink slightly on tap
                 transition={{ duration: 0.3 }}
               >
-                <GoArrowUpRight className="h-8 w-8 mr-2 bg-white transition-all duration-500" /> View all
+                <motion.div
+                  whileHover={{ scale: 1.2, rotate: 10 }} // Scale and rotate only the arrow
+                  transition={{ duration: 0.3 }}
+                >
+                  <GoArrowUpRight className="h-8 w-8 mr-2 bg-white transition-all duration-500" />
+                </motion.div>
+                View all
               </motion.a>
             </div>
           </div>
@@ -80,9 +97,10 @@ export default function ResearchGrid() {
       {/* Research Reports Grid */}
       <div className="pb-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8">
         <motion.div
+          ref={ref} // Attach scroll animation reference
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto"
           initial="hidden"
-          animate="visible"
+          animate={controls} // Trigger animation based on scroll
           variants={{
             hidden: { opacity: 0, scale: 0.8 },
             visible: {
@@ -123,11 +141,15 @@ export default function ResearchGrid() {
                     <motion.a
                       href={report.href}
                       className="inline-flex items-center justify-center bg-[#248232] hover:bg-[#1e6b28] transition-colors p-2 sm:p-3 rounded-md w-10 h-10"
-                      whileHover={{ scale: 1.2, rotate: 10 }} // Scale and rotate on hover
                       whileTap={{ scale: 0.9 }} // Shrink slightly on tap
                       transition={{ duration: 0.3 }}
                     >
-                      <GoArrowUpRight className="h-5 w-5 text-white" />
+                      <motion.div
+                        whileHover={{ scale: 1.2, rotate: 10 }} // Scale and rotate only the arrow
+                        transition={{ duration: 0.3 }}
+                      >
+                        <GoArrowUpRight className="h-5 w-5 text-white" />
+                      </motion.div>
                     </motion.a>
                   </div>
                 </div>
