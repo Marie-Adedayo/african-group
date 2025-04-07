@@ -36,7 +36,7 @@ const CreateValue = () => {
 
   return (
     <section className="flex flex-col gap-4 md:gap-14 px-4 md:px-10 py-6 md:pt-16 items-center ">
-        <div className="relative flex flex-col items-center justify-center">
+        <div className="relative flex flex-col gap-4 md:gap-6 items-center justify-center w-full md:w-[650px]">
             <div className="w-[100px] opacity-100 flex flex-row bg-gray-300">
                 <span>
                     <div className="w-2 h-2 mt-2 mx-2 bg-[#248232]"></div>
@@ -44,20 +44,22 @@ const CreateValue = () => {
                 ESG
             </div>
             <div>
-                <h1 className="text-[#071a0a]">
-                    <span className="text-[#248232]">Creating value</span> for our
+                <h1 className="text-[#071a0a] text-3xl md:text-5xl">
+                    <span className="text-[#248232] ">Creating value</span> for our
                     clients, employees, and communities
                 </h1>
             </div>
-            <div className="space-y-6">
-                <p>
+            <div className="space-y-6 ">
+                <p className="text-center justify-center">
                     We firmly believe DTRE has the ability to play a leading role in
-                    fostering a more inclusive industry and building a more sustainable
+                    fostering a <br /> 
+                    more inclusive industry and building a more sustainable
                     future for all.
                 </p>
-                <p>
+                <p className="text-center justify-center">
                     It’s a long journey, but we are uniquely placed to effect change
-                    rapidly and are determined to make the right steps.
+                    rapidly and <br />
+                    are determined to make the right steps.
                 </p>
             </div>
       </div>

@@ -51,7 +51,7 @@ const History = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-4 md:gap-10 bg-[#071a0a] text-[#FCFFFC]">
+      <div className="flex flex-col gap-4 md:gap-10 bg-[#071a0a] text-[#FCFFFC] pb-4 md:pb-10 overflow-hidden">
         {/* First Part: Title and Navigation */}
         <div className="flex flex-col md:flex-row justify-between px-4 py-8 md:px-8 items-center">
           <div className="text-left">
@@ -74,23 +74,22 @@ const History = () => {
             </button>
           </div>
         </div>
-{/* 
+
         
         <Swiper
           modules={[Navigation]}
           navigation={{ nextEl: ".next-button", prevEl: ".prev-button" }}
           spaceBetween={15}
-          slidesPerView={1}
+          slidesPerView={1} // Default for smaller screens
           breakpoints={{
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            768: { slidesPerView: 2 }, // Show 2 slides for medium screens
+            1024: { slidesPerView: 4 }, // Show 4 slides for desktop screens
           }}
-          className="px-4 md:px-8"
+          className=""
         >
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-start gap-4 bg-[#071a0a] text-[#FCFFFC] shadow-md">
-            
+              <div className="flex flex-col items-start gap-4 bg-[#071a0a] text-[#FCFFFC]">
                 <div className="">
                   <img
                     src={slide.image}
@@ -98,16 +97,15 @@ const History = () => {
                     className="rounded-md w-[200px] h-[200px] object-cover"
                   />
                 </div>
-                
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-start">
                   <div className="text-gray-500 font-medium">{slide.date}</div>
                   <p className="text-base font-light text-gray-700 mt-2">{slide.text}</p>
                 </div>
               </div>
             </SwiperSlide>
           ))}
-        </Swiper> 
-        */}
+        </Swiper>
+
       </div>
     </>
   );
