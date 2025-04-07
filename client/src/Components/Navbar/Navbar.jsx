@@ -53,13 +53,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" className="py-2 px-3">
+            <Link to="/about" className="py-2 px-3">
               About
             </Link>
           </li>
         </ul>
 
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex flex-col md:flex-row gap-4 list-none">
               <li>
@@ -86,11 +86,11 @@ const Navbar = () => {
           >
             <NavLinks isMobile={true} />
             <li>
-              <Link to="/" className="py-2 px-3 block">
+              <Link to="/about" className="py-2 px-3 block">
                 About
               </Link>
             </li>
-            <div className="py-0 pl-0 md:py-5 md:pl-4">
+            <div className="py-0 pl-0 md:py-5 md:pl-4 ">
               <li>
                 <Link to="/" className="py-2 px-3 block">
                   Property Search
