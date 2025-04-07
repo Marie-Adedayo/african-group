@@ -7,6 +7,7 @@ import Navbar from '../Components/Navbar/Navbar'
 import Hero  from '../Components/Hero'
 import LeadershipTeam from '../Components/Leadership'
 import Footer from '../Components/Footer'
+import NewsSection from '../Data/News'
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
         <ServicesLayout />
         <ResearchGrid />
         <PeopleSection />
+        <NewsSection />
         <LeadershipTeam />
         <Footer />
       </div>
