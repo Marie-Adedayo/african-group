@@ -1,37 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const LoadingScreen = ({ onComplete }) => {
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0, scale: 0.5 },
-    visible: { opacity: 1, scale: 1 },
-    exit: { opacity: 0, scale: 10 }, // Zoom out effect
+  const textVariants = {
+    hidden: { opacity: 0, scale: 0.5 }, 
+    visible: { opacity: 1, scale: 15 }, 
+    exit: { opacity: 0, scale: 19 }, 
   };
 
   useEffect(() => {
-    // Simulate loading duration
     const timer = setTimeout(() => {
-      onComplete(); // Trigger the completion callback
-    }, 3000); // 3 seconds
+      onComplete(); 
+    }, 3500);
 
-    return () => clearTimeout(timer); // Cleanup timer
+    return () => clearTimeout(timer); 
   }, [onComplete]);
 
   return (
     <motion.div
       className="flex items-center justify-center h-screen bg-gray-900"
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-      variants={containerVariants}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
       <motion.h1
         className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#248232]"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
+        variants={textVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        transition={{ duration: 1.5 }}
       >
         African Group
       </motion.h1>
