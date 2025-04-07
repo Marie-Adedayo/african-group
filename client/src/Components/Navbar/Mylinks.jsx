@@ -7,17 +7,22 @@ export const links = [
     link: "/about",
     sublinks: [
       {
-        Head: "Lorem Ipsum",
+        Head: "Surveying",
         name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         link: "/service/lorem-ipsum",
       },
       {
-        Head: "Dolor Sit Amet",
+        Head: "Real Estate ",
         name: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         link: "/service/dolor-sit-amet",
       },
       {
-        Head: "Consectetur Adipiscing",
+        Head: "Construction",
+        name: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        link: "/service/consectetur-adipiscing",
+      },
+      {
+        Head: "Agro",
         name: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
         link: "/service/consectetur-adipiscing",
       },
