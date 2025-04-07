@@ -9,7 +9,7 @@ export const links = [
       {
         Head: "Surveying",
         name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        link: "/service/lorem-ipsum",
+        link: "/survey",
       },
       {
         Head: "Real Estate ",

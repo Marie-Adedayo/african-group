@@ -59,10 +59,12 @@ const NavLinks = () => {
                         key={sublink.Head}
                         className="bg-[#dce4dc] text-[#071a0a] px-8 py-6 hover:bg-[#071a0a] hover:text-[#FCFFFC]"
                       >
-                        <h2 className="text-lg font-semibold">{sublink.Head}</h2>
-                        <p className="text-sm  mt-2">
-                          {sublink.name}
-                        </p>
+                        <a href= {sublink.link} >
+                          <h2 className="text-lg font-semibold">{sublink.Head}</h2>
+                          <p className="text-sm  mt-2">
+                            {sublink.name}
+                          </p>
+                        </a>
                       </div>
                     ))}
                   </div>
