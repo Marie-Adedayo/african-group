@@ -5,12 +5,8 @@ const CardWithImage = () => {
   return (
     <div className="bg-[#FCFFFC] p-6 md:p-10">
       <div
-        className="relative h-screen overflow-hidden rounded-[0.26438rem] bg-[#fafcff] flex flex-col justify-between p-[1.8125rem_1.125rem] text-[#fafcff]"
-        style={{
-          backgroundImage: `url('/Images/picture.jpg')`, // Replace with the correct image path
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="relative h-[90vh] overflow-hidden rounded-[0.26438rem] bg-[#071a0a] flex flex-col justify-between p-[1.8125rem_1.125rem] text-[#fafcff]"
+   
       >
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] z-[-1]"></div>
