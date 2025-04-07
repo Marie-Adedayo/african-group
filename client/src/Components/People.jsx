@@ -3,9 +3,8 @@ import people from "../../Images/people.jpg";
 
 export default function PeopleSection() {
   return (
-    <div className="w-full max-w-7xl mx-auto p-2.5 py-10">
+    <div className="w-full mx-auto p-2.5 py-10 md:px-8">
       <div className="flex flex-col md:flex-row-reverse">
-        {/* Right side - Content (first on mobile, second on desktop) */}
         <div className="w-full md:w-1/2 md:p-10 lg:p-16 flex justify-center">
           <div className="mb-6">
             <div className="inline-flex items-center bg-[#248232] px-3 py-1 mb-4">
@@ -23,7 +22,7 @@ export default function PeopleSection() {
             </p>
 
              <a href="#" className="inline-flex items-center hover:text-[#248232] transition-colors">
-                <GoArrowUpRight className="h-8 w-8 mr-2 bg-[#248232] text-black" /> Meet the Team
+                <GoArrowUpRight className="h-8 w-8 mr-2 bg-[#248232] text-white" /> Meet the Team
             </a>
           </div>
         </div>

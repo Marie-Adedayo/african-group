@@ -1,33 +1,32 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
-import campaign from "../../Images/campaign.jpg";
-import people from "../../Images/people.jpg";
-import company from "../../Images/company.jpg";
+
 
 export default function ModernLayout() {
   const [hoveredItem, setHoveredItem] = useState(0); // Default image index
 
-  const images = [
-    campaign, // For "Industrial & Logistics"
-    people, // For "Science & Technology"
-    company,
-    "/placeholder.svg?height=600&width=800&text=Capital",
-  ];
+  const images = ["/Images/Services.webp", 
+    "/Images/picture.jpg",
+    "https://dtre.com/_next/image?url=https%3A%2F%2Fdtre-com.s3.eu-west-2.amazonaws.com%2Fdtre-com%2FDTRE_Industrial_Services2.jpg&w=750&q=75", 
+    "https://dtre.com/_next/image?url=https%3A%2F%2Fdtre-com.s3.eu-west-2.amazonaws.com%2Fdtre-com%2FDTRE_SciTech_Services2.jpg&w=750&q=75"];
 
   const listItems = [
-    { id: 0, number: "01", text: "Industrial & Logistics" },
-    { id: 1, number: "02", text: "Science & Technology" },
-    { id: 2, number: "03", text: "Alternative Capital Markets" },
+    { id: 0, number: "01", text: "Surveying", link: "#" },
+    { id: 1, number: "02", text: "Real Estate", link: "#" },
+    { id: 2, number: "03", text: "Construction", link: "#" },
+    { id: 2, number: "03", text: "Agro", link: "#" },
   ];
 
   return (
-    <div className="container mx-auto p-2">
+    <div className="mx-auto p-2 md:pl-8 md:pr-8 md:pb-8">
       <div className="flex flex-col md:flex-row md:items-center">
+        {/* Image Section */}
         <div className="w-full md:w-1/2">
-          <div className="relative aspect-[4/3] w-full">
+          <div className="md:w-full ">
             <img
               src={images[hoveredItem]}
-              alt="Modern building with blue glass facade"
+              alt="Modern building"
               className="object-cover w-full h-full transition-opacity duration-300"
               onError={(e) => (e.target.src = "/placeholder.svg")}
             />
@@ -40,36 +39,39 @@ export default function ModernLayout() {
             Discover our services at African Group
           </div>
 
-          <h3 className="text-[1.5rem] md:text-4xl font-bold text-gray-800 leading-tight tracking-wide">
+          <h3 className="text-[1.5rem] md:text-5xl md:pb-4 font-bold text-gray-800 leading-tight tracking-wide">
             A discreet adviser that consistently delivers <span className="text-[#248232]">quality advice</span> across
             the full transaction life cycle.
           </h3>
 
           <div className="border-t border-gray-200 my-6"></div>
 
+          {/* Single Div Containing All Links */}
           <div className="space-y-6">
             {listItems.map((item) => (
-              <div key={item.id}>
-                <div
-                  className="flex items-start group relative cursor-pointer"
-                  onMouseEnter={() => setHoveredItem(item.id)} // Update image only on hover
-                >
+              <Link
+                key={item.id}
+                to={item.link}
+                className="block"
+                onMouseEnter={() => setHoveredItem(item.id)}
+              >
+                <div className="flex items-center text-center group relative cursor-pointer">
                   <span className="text-sm font-medium text-gray-500 mr-3">{item.number}</span>
-                  <span
-                    className="text-lg font-medium text-gray-800 group-hover:text-[#248232] transition-colors"
-                  >
+                  <span className="text-lg md:text-3xl font-medium text-gray-800 group-hover:text-[#248232] transition-colors">
                     {item.text}
                   </span>
 
+                  {/* Arrow Icon with Background */}
                   <div className="absolute -right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
-                    <div className="bg-[#248232] p-2 rounded-md">
-                      <GoArrowUpRight className="h-4 w-4 text-white" />
+                    <div className="bg-[#248232] p-5">
+                      <GoArrowUpRight className="h-3.5 w-3.5 text-white" />
                     </div>
                   </div>
                 </div>
 
-                {item.id < listItems.length - 1 && <div className="border-t border-gray-200 my-6"></div>}
-              </div>
+                {/* Separator Line */}
+                {item.id < listItems.length - 1 && <div className="border-t border-gray-200 my-9"></div>}
+              </Link>
             ))}
           </div>
         </div>
