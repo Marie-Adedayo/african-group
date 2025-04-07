@@ -1,20 +1,32 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import './index.css'
-import Home from './Pages/Home'
-import About from './Pages/About'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react'; // Import useState
+import { AnimatePresence } from 'framer-motion'; // Import AnimatePresence
+import './index.css';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import LoadingScreen from './Components/LoadingScreen'; // Assuming you have a LoadingScreen component
 
 function App() {
-  return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+  const [isLoading, setIsLoading] = useState(true);
 
-        </Routes>
-      </Router>
-    </>
-  )
+  const handleLoadingComplete = () => {
+    setIsLoading(false); // Hide the loading screen
+  };
+
+  return (
+    <AnimatePresence>
+      {isLoading ? (
+        <LoadingScreen onComplete={handleLoadingComplete} />
+      ) : (
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </Router>
+      )}
+    </AnimatePresence>
+  );
 }
 
-export default App
+export default App;
