@@ -34,7 +34,7 @@ const Hero = () => {
   const swiperRef = useRef(null);
 
   return (
-    <div className="bg-[#071a0a] relative w-full min-h-screen flex flex-col gap-12 md:gap-20 items-center text-white pl-3 pt-6 md:pt-16">
+    <div className="bg-[#071a0a] relative w-full h-[90vh] flex flex-col gap-12 md:gap-20 items-center text-white pl-3 pt-6 md:pt-16 pb-6 md:pb-10">
       {/* Swiper */}
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -50,16 +50,16 @@ const Hero = () => {
             key={slide.id}
             className="flex flex-col items-start text-start mt-20 gap-8 md:gap-10"
           >
-            <div className="mx-4 md:mx-10">
-              <div>
-                <h1 className="text-4xl md:text-6xl w-[70%] md:w-[400px] font-normal">
+            <div className="mx-4 md:mx-10  space-y-6">
+              <div className="space-y-5">
+                <h1 className="text-4xl md:text-6xl w-[70%] md:w-[500px] font-normal">
                   {slide.title}
                 </h1>
                 <p className="mt-2 text-sm md:text-base w-[70%] md:w-[400px]">{slide.description}</p>
               </div>
               <div className="mt-4 group ">
                 <a href="/" className="flex flex-row gap-2">
-                  <button className="flex items-center gap-2 text-sm md:text-lg font-semibold bg-[#040f0f] px-4 py-2 group-hover:bg-[#2ba84a] transition-all duration-300">
+                  <button className="flex items-center gap-2 text-sm md:text-lg font-semibold bg-[#040f0f] px-4 py-3 group-hover:bg-[#2ba84a] transition-all duration-300">
                     <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 transition-all duration-500 group-hover:rotate-45 group-hover:scale-110" />
                   </button>
                   <span className="mt-2">{slide.button}</span> 

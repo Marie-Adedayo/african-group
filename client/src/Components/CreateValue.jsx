@@ -36,7 +36,7 @@ const CreateValue = () => {
 
   return (
     <section className="flex flex-col gap-4 md:gap-14 px-4 md:px-10 py-6 md:pt-16 items-center ">
-        <div className="relative items-center justify-center">
+        <div className="relative flex flex-col items-center justify-center">
             <div className="w-[100px] opacity-100 flex flex-row bg-gray-300">
                 <span>
                     <div className="w-2 h-2 mt-2 mx-2 bg-[#248232]"></div>
