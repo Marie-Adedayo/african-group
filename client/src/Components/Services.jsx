@@ -7,6 +7,7 @@ export default function ModernLayout() {
   const [hoveredItem, setHoveredItem] = useState(0); // Default image index
 
   const images = ["/Images/Services.webp", 
+    "/Images/picture.jpg",
     "https://dtre.com/_next/image?url=https%3A%2F%2Fdtre-com.s3.eu-west-2.amazonaws.com%2Fdtre-com%2FDTRE_Industrial_Services2.jpg&w=750&q=75", 
     "https://dtre.com/_next/image?url=https%3A%2F%2Fdtre-com.s3.eu-west-2.amazonaws.com%2Fdtre-com%2FDTRE_SciTech_Services2.jpg&w=750&q=75"];
 
@@ -22,7 +23,7 @@ export default function ModernLayout() {
       <div className="flex flex-col md:flex-row md:items-center">
         {/* Image Section */}
         <div className="w-full md:w-1/2">
-          <div className="h-[20rem] md:w-full ">
+          <div className="md:w-full ">
             <img
               src={images[hoveredItem]}
               alt="Modern building"
