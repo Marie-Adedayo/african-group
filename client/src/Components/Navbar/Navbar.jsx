@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex flex-col md:flex-row gap-4 list-none">
               <li>
-                <Link to="/" className="py-2 px-3 ">
+                <Link to="/" className="py-2 px-3">
                   People
                 </Link>
               </li>
