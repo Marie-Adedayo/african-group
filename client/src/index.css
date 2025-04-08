@@ -1,28 +1,30 @@
 @import "tailwindcss";
 
+*, ** {
+  margin: 0;
+  padding: 0;
+}
+
 .leadership-swiper {
   padding-bottom: 0 !important;
 }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-
-
+/* Hide page overflow */
+html,
 body {
-  @apply bg-[#111] text-gray-300 font-inter;
+  scrollbar-width: 0;
 }
 
-@layer components {
-  .sub-menu {
-    @apply absolute top-[4.2rem] p-[15px] rounded-[6px] origin-[50%_-170px] backdrop-blur bg-white/[0.04];
-  }
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('../src/assets/Fonts/TT-Commons/Fontspring-DEMO-tt_commons_pro_regular.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-@layer utilities {
-  .flex-center {
-    @apply flex items-center;
-  }
-  .flex-center-between {
-    @apply flex items-center justify-between;
-  }
-} */
+@theme {
+  --font-TT-Commons: TT-Commons, 'sans-serif';
+  --color-brand-red: oklch(35.32% 0.1449 29.23);
+  --color-red-light: oklch(45.85% 0.174 29.23);
+}
