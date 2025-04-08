@@ -8,12 +8,12 @@ export default function AboutStats() {
         <div className="lg:w-1/2 space-y-4 sm:space-y-6 md:text-left ">
           <div className="flex items-center">
             <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0"></div>
-            <span className="text-[0.89rem] sm:text-sm text-gray-600 uppercase tracking-wide">
+            <span className="text-[0.89rem] sm:text-sm text-gray-600 uppercase tracking-wide font-TT-Commons">
               Operating across the Nigeria and Abroad
             </span>
           </div>
 
-          <h2 className="text-[1.9rem] sm:text-3xl md:text-[3.2rem] lg:text-[3rem] font-medium text-[#1a365d] leading-tight tracking-tighter">
+          <h2 className="font-TT-Commons text-[1.9rem] sm:text-3xl md:text-[3.2rem] lg:text-[3rem] font-medium text-[#1a365d] leading-tight tracking-tighter">
             Helping clients navigate a complex market by executing real estate solutions that ensure success.
           </h2>
 
@@ -28,7 +28,7 @@ export default function AboutStats() {
               to="/about"
               className="group inline-flex items-center gap-4 text-inherit text-base font-normal no-underline bg-transparent border-none outline-none shadow-none cursor-pointer appearance-none hover:opacity-80 flex-row-reverse justify-end"
             >
-              <span className="text-[1rem]">About African Group</span>
+              <span className="text-[1rem] font-TT-Commons">About African Group</span>
               <i className="p-4 bg-[#248232] transition-transform duration-300 group-hover:rotate-45">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,15 +46,15 @@ export default function AboutStats() {
         </div>
 
         {/* Right Column - Stats */}
-        <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0 md:text-left">
+        <div className="space-y-4 sm:space-y-6 mt-6 lg:mt-0 md:text-left font-TT-Commons">
           {/* Stat 1 */}
           <div className="border-t border-gray-200 pt-4 sm:pt-6">
             <div className="text-[2.9rem] md:text-7xl sm:text-5xl font-medium text-[#248232] mb-1 sm:mb-2 tracking-tighter align-middle">
-              2.7bn<sup className="text-[2.9rem] md:text-7xl sm:text-5xl tracking-tighter align-middle">+</sup>
+              2.7bn<sup className="text-[2.9rem] md:text-7xl sm:text-5xl tracking-tighter align-middle font-TT-Commons">+</sup>
             </div>
             <div className="flex items-start">
               <div className="w-2 h-2 bg-[#248232] mr-2 mt-1.5 flex-shrink-0"></div>
-              <span className="text-[0.8rem] sm:text-sm text-gray-600 uppercase tracking-wide">
+              <span className="text-[0.8rem] sm:text-sm text-gray-600 uppercase tracking-wide font-TT-Commons">
                 Of industrial transactions in 2023 - £28.5bn since 2010
               </span>
             </div>
@@ -65,7 +65,7 @@ export default function AboutStats() {
             <div className="text-[2.9rem] md:text-7xl sm:text-5xl font-medium text-[#248232] mb-1 sm:mb-2 tracking-tighter">72m</div>
             <div className="flex items-start">
               <div className="w-2 h-2 bg-[#248232] mr-2 mt-1.5 flex-shrink-0"></div>
-              <span className="text-[0.8rem] sm:text-sm text-gray-600 uppercase tracking-wide">
+              <span className="text-[0.8rem] sm:text-sm text-gray-600 uppercase tracking-wide font-TT-Commons">
                 Sq ft + of current industrial and logistics mandates
               </span>
             </div>
@@ -76,7 +76,7 @@ export default function AboutStats() {
             <div className="text-[2.9rem] md:text-7xl sm:text-5xl font-medium text-[#248232] mb-1 sm:mb-2 tracking-tighter">4.3m</div>
             <div className="flex items-start">
               <div className="w-2 h-2 bg-[#248232] mr-2 mt-1.5 flex-shrink-0"></div>
-              <span className="text-[0.8rem] sm:text-sm text-gray-600 uppercase tracking-wide">
+              <span className="text-[0.8rem] sm:text-sm text-gray-600 uppercase tracking-wide font-TT-Commons">
                 Sq ft + of current science and technology mandates
               </span>
             </div>
@@ -87,7 +87,7 @@ export default function AboutStats() {
             <div className="text-[2.9rem] md:text-7xl sm:text-5xl font-medium text-[#248232] mb-1 sm:mb-2 tracking-tighter">4000 beds</div>
             <div className="flex items-start">
               <div className="w-2 h-2 bg-[#248232] mr-2 mt-1.5 flex-shrink-0"></div>
-              <span className="text-[0.8rem] sm:text-sm text-gray-600 uppercase tracking-wide">
+              <span className="text-[0.8rem] sm:text-sm text-gray-600 uppercase tracking-wide font-TT-Commons">
                 Current alternative capital markets funding mandates
               </span>
             </div>
