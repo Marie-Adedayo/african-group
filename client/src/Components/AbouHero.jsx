@@ -4,9 +4,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 const AboutHero = () => {
     return(
         <>
-            <div className="bg-[#071a0a] text-[#FCFFFC]">
+            <div className="bg-[#006400] text-[#fcfffc] font-TT-Commons">
                 {/* Breadcrumb Section */}
-                <ul className="flex items-center gap-[0.6875rem] md:pt-[7rem] md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#FCFFFC] text-[10px] leading-none uppercase">
+                <ul className="flex items-center text-[#fcfffc] gap-[0.6875rem] md:pt-[7rem] md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#FCFFFC] text-[10px] leading-none uppercase">
                     <li>
                     <a href="/" className="">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10" className="w-3 h-3">
@@ -30,7 +30,7 @@ const AboutHero = () => {
                     <li className="">About</li>
                 </ul>
                 {/* Hero Section */}
-                <div className="relative bg-[#071a0a] mt-[28rem] flex item-center justify-center md:items-end md:justify-end p-4">
+                <div className="relative bg-[#006400] mt-[28rem] flex item-center justify-center md:items-end md:justify-end p-4">
                     <div className="space-x-4">
                         <div className="w-full md:w-[400px] group">
                             <a
@@ -38,11 +38,11 @@ const AboutHero = () => {
                                 href="/about#our-history"
                                 target="_self"
                             >
-                                <span>Our History</span>
-                                <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-gray-500 group-hover:text-[#FCFFFC] transition-transform duration-500 group-hover:rotate-45 group-hover:scale-110" />
+                                <span className="group-hover:text-[#071a0a]">Our History</span>
+                                <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-[#fcfffc] group-hover:text-[#071a0a] transition-transform duration-500 group-hover:rotate-45 group-hover:scale-110" />
                             </a>
                             {/* Line under the text */}
-                            <div className="w-full h-[1px] mt-2 bg-gray-500 group-hover:bg-[#FCFFFC] transition-all"></div>
+                            <div className="w-full h-[1px] mt-2 bg-[#fcfffc] group-hover:bg-[#071a0a] transition-all"></div>
                         </div>
                         <div className="w-full md:w-[400px] group">
                             <a
@@ -50,11 +50,11 @@ const AboutHero = () => {
                                 href="/about#esg"
                                 target="_self"
                             >
-                                <span className=" ">ESG</span>
-                                <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-gray-500 group-hover:text-[#FCFFFC] item-end justify-end transition-transform duration-500 group-hover:rotate-45 group-hover:scale-110" />
+                                <span className="group-hover:text-[#071a0a] ">ESG</span>
+                                <FiArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-[#fcfffc] group-hover:text-[#071a0a] item-end justify-end transition-transform duration-500 group-hover:rotate-45 group-hover:scale-110" />
                             </a>
                             {/* Line under the text */}
-                            <div className="w-full h-[1px] mt-2 bg-gray-500 group-hover:bg-[#FCFFFC] transition-all"></div>
+                            <div className="w-full h-[1px] mt-2 bg-[#fcfffc] group-hover:bg-[#071a0a] transition-all"></div>
                         </div>
                     </div>
                 </div>

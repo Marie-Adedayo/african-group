@@ -11,20 +11,20 @@ import { FiArrowUpRight } from "react-icons/fi";
 const slides = [
   {
     id: 1,
-    title: "Trusted advice, actionable insights",
-    description: "Stay ahead with expert opinions and strategies for growth.",
+    title: "Empowering precision and accuracy",
+    description: "Explore surveying solutions that lay the foundation for success.",
     button: "Click to read",
   },
   {
     id: 2,
-    title: "DTRE 2025 Outlook",
-    description: "An in-depth look at market trends and forecasts for 2025.",
+    title: "Transforming spaces into dream realities",
+    description: "Your partner in visionary real estate development.",
     button: "Click to read",
   },
   {
     id: 3,
-    title: "DTRE Big Box Logistics Report - Q4 2024",
-    description: "Discover the latest logistics data and key takeaways.",
+    title: "Cultivating progress and harvesting dreams",
+    description: "African Group leads the way in innovative agricultural solutions.",
     button: "Click to read",
   },
 ];
@@ -34,7 +34,7 @@ const Hero = () => {
   const swiperRef = useRef(null);
 
   return (
-    <div className="bg-[#071a0a] relative w-full h-[90vh] flex flex-col gap-12 md:gap-20 items-center text-white pl-3 pt-6 md:pt-16 pb-6 md:pb-10">
+    <div className="bg-[#006400] relative w-full h-[90vh] flex flex-col font-TT-Commons gap-12 md:gap-20 justify-between items-center text-white pl-3 pt-6 md:pt-16 pb-6 md:pb-10">
       {/* Swiper */}
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -52,7 +52,7 @@ const Hero = () => {
           >
             <div className="mx-4 md:mx-10  space-y-6">
               <div className="space-y-5">
-                <h1 className="text-4xl md:text-6xl w-[70%] md:w-[500px] font-normal">
+                <h1 className="text-4xl md:text-6xl w-[70%] md:w-[600px] font-normal">
                   {slide.title}
                 </h1>
                 <p className="mt-2 text-sm md:text-base w-[70%] md:w-[400px]">{slide.description}</p>

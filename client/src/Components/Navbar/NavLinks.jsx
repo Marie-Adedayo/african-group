@@ -35,8 +35,8 @@ const NavLinks = () => {
 
             {/* Desktop Dropdown */}
             {link.submenu && link.sublinks && (
-              <div className="absolute top-20 hidden group-hover:md:block hover:md:block w-full left-0 z-50">
-                <div className="grid grid-cols-2 p-6 bg-white">
+              <div className="absolute top-20 hidden group-hover:md:block hover:md:block w-full border-t-[1px] border-[#006400] left-0 z-50">
+                <div className="grid grid-cols-[1fr_2fr] p-6 bg-white">
                   {/* First Section */}
                   <div className=" flex flex-col space-y-6">
                     <h1 className="text-5xl text-[#071a0a] font-bold">{link.name}</h1>
@@ -53,7 +53,7 @@ const NavLinks = () => {
 
 
                   {/* Second Section */}
-                  <div className=" grid grid-cols-2 gap-4">
+                  <div className=" grid grid-cols-3 gap-4">
                     {link.sublinks.map((sublink) => (
                       <div
                         key={sublink.Head}

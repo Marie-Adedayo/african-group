@@ -28,11 +28,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-[#071a0a] fixed w-full z-50 transition-transform duration-500 ${
+      className={`bg-[#FCFFFC] fixed w-full z-50 font-TT-Commons transition-transform duration-500 ${
         isScrolling ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="flex items-center font-medium justify-between text-[#FCFFFC] border-b border-white px-4 md:px-10">
+      <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] items-center font-TT-Commons font-medium  text-[#071a0a] border-b border-[#071a0a] px-4 md:px-10 overflow-hidden">
         {/* Logo and Menu Toggle */}
         <div className="md:w-auto w-full flex justify-between">
           <a href="/">
@@ -44,7 +44,7 @@ const Navbar = () => {
           </a>
 
           <div
-            className="z-50 md:z-0 text-3xl md:hidden"
+            className="z-50 md:z-0 text-3xl md:hidden text-[]"
             onClick={() => setOpen(!open)}
           >
             <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
@@ -67,7 +67,7 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden md:block ">
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4 justify-end items-end ">
             <div className="flex flex-col md:flex-row gap-4 list-none">
               <li>
                 <Link to="/" className="py-2 px-3">
@@ -85,9 +85,9 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div>
+        <div className="fixed md:hidden">
           <ul
-            className={`fixed md:hidden bg-[#071a0a] pt-14 w-full top-0 text-[#FCFFFC] overflow-y-auto z-40 duration-500 ${
+            className={`fixed md:hidden bg-[#fcfffc] pt-14 w-full top-0 text-[#071a0a] pb-10 overflow-y-auto z-40 duration-500 ${
               open ? "left-0" : "left-[-100%]"
             }`}
           >
