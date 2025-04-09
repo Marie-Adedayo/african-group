@@ -48,10 +48,18 @@ const History = () => {
       text: "This is a brief description for slide 2.",
     },
   ];
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
 
   return (
     <>
-      <div className="flex flex-col gap-4 md:gap-10 bg-[#071a0a] text-[#FCFFFC] pb-4 md:pb-10 overflow-hidden">
+      <div className="font-TT-Commons h-[85vh] flex flex-col gap-4 md:gap-10 bg-[#071a0a] text-[#FCFFFC] px-2 py-10 overflow-hidden">
         {/* First Part: Title and Navigation */}
         <div className="flex flex-col md:flex-row justify-between px-4 py-8 md:px-8 items-center">
           <div className="text-left">
@@ -74,37 +82,36 @@ const History = () => {
             </button>
           </div>
         </div>
-
-        
-        <Swiper
-          modules={[Navigation]}
-          navigation={{ nextEl: ".next-button", prevEl: ".prev-button" }}
-          spaceBetween={15}
-          slidesPerView={1} // Default for smaller screens
-          breakpoints={{
-            768: { slidesPerView: 2 }, // Show 2 slides for medium screens
-            1024: { slidesPerView: 4 }, // Show 4 slides for desktop screens
-          }}
-          className=""
-        >
-          {slidesData.map((slide, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex flex-col items-start gap-4 bg-[#071a0a] text-[#FCFFFC]">
-                <div className="">
+  
+        <div className="slider-container w-full h-full overflow-hidden">
+          <Swiper
+            modules={[Navigation]}
+            navigation={{ nextEl: ".next-button", prevEl: ".prev-button" }}
+            spaceBetween={5}
+            slidesPerView={2} // Default
+            breakpoints={{
+              768: { slidesPerView: 2 }, // Medium screens
+              1024: { slidesPerView: 4 }, // Desktop screens
+            }}
+          >
+            {slidesData.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <div className=" flex flex-col justify-center items-center  bg-transparent border-r-[1px] border-gray-300 ">
                   <img
                     src={slide.image}
                     alt={`Slide ${index + 1}`}
-                    className="rounded-md w-[200px] h-[200px] object-cover"
+                    className="w-[200px] h-[200] md:w-[300px] md:h-[200px] object-cover"
                   />
+                  <div className="mt-2 text-start justify-items-start">
+                    <div className="text-gray-500 font-medium">{slide.date}</div>
+                    <p className="text-base font-light text-gray-700">{slide.text}</p>
+                  </div>
                 </div>
-                <div className="flex flex-col justify-start">
-                  <div className="text-gray-500 font-medium">{slide.date}</div>
-                  <p className="text-base font-light text-gray-700 mt-2">{slide.text}</p>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+        </div>
 
       </div>
     </>

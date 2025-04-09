@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 const SurveyHero = () => {
     return(
         <>
-            <div className="bg-[#071a0a] text-[#FCFFFC]">
+            <div className="bg-[#006400] text-[#FCFFFC]">
                 {/* Breadcrumb Section */}
                 <ul className="flex items-center gap-[0.6875rem] pt-[3.5rem] md:pt-[7rem] pb-1 md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#FCFFFC] text-[10px] leading-none uppercase">
                     <li>
@@ -30,7 +30,7 @@ const SurveyHero = () => {
                     <li className="">Survey</li>
                 </ul>
                 {/* Hero Section */}
-                <div className="bg-[#071a0a] px-4 py-7 md:px-10 md:py-12">
+                <div className="bg-[#006400] px-4 py-7 md:px-10 md:py-12">
                     
                     <div
                         className="relative h-[85vh]  md:h-[68vh] overflow-hidden rounded-[0.26438rem] bg-[#FCFFFC] flex flex-col justify-between p-[1.8125rem_1.125rem] text-[#071a0a]"

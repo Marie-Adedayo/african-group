@@ -26,9 +26,14 @@ export const links = [
         name: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
         link: "/service/consectetur-adipiscing",
       },
+      {
+        Head: "Tech",
+        name: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        link: "/service/consectetur-adipiscing",
+      },
     ],
   },
-  {
+  /* {
     name: "Research & Insight",
     description:
       "We surface and deliver verifiable long-term industry trends, as well as granular asset-by-asset understandings that unlock actionable recommendations for our clients.",
@@ -51,5 +56,5 @@ export const links = [
         link: "/research-insight/asset-reports",
       },
     ],
-  },
+  }, */
 ];

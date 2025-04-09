@@ -1,7 +1,7 @@
 const Block = () => {
     return(
         <section>
-                <div className="w-full min-h-screen relative flex flex-col gap-6 md:gap-14 py-4 md:py-10 px-6 md:px-10">
+                <div className="w-full min-h-screen relative flex flex-col gap-6 md:gap-14 py-4 md:py-10 px-6 md:px-10 font-TT-Commons">
                     <div className="pl-4 md:pl-20 space-y-6 md:space-y-14">
                         <h1 className="text-lg md:text-[2rem] font-medium not-italic leading-[100%] md:leading-[95%] tracking-[0.02em] md:tracking-[-0.015em]">An increasingly digital world still requires physical spaces to innovate, create and do.</h1>
                         <h1 className="text-lg md:text-[2rem] font-medium not-italic leading-[100%] md:leading-[95%] tracking-[0.02em] md:tracking-[-0.015em]">Real estate needs and expectations might’ve changed, but the challenge remains the same – businesses need clarity and best judgement to connect the ideas, people and places that make them successful.</h1>

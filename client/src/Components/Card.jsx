@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const CardWithImage = () => {
   return (
-    <div className="bg-[#FCFFFC] p-6 md:p-10">
+    <div className="bg-[#FCFFFC] p-6 md:p-10 font-TT-Commons">
       <div
         className="relative h-[90vh] overflow-hidden rounded-[0.26438rem] bg-[#071a0a] flex flex-col justify-between p-[1.8125rem_1.125rem] text-[#fafcff]"
    
@@ -12,7 +12,7 @@ const CardWithImage = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] z-[-1]"></div>
 
         {/* Content */}
-        <div className="relative z-1 flex flex-col gap-4 p-6">
+        <div className="relative z-1 flex flex-col gap-4 p-6 font-TT-Commons">
           <p className="text-sm tracking-wide uppercase font-medium">Property Search</p>
           <h1 className="text-xl md:text-2xl font-bold leading-[1.2] w-[400px]">
             Whether it’s leasing or capital markets, our team can help you with your search.
