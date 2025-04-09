@@ -34,13 +34,13 @@ export default function ModernLayout() {
         </div>
 
         <div className="w-full md:w-1/2 md:p-12 space-y-6 md:text-left py-10">
-          <div className="flex items-center px-4 py-2 bg-gray-700 text-white text-xs font-medium tracking-wider uppercase w-full md:w-[28rem]">
-            <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0"></div>
+          <div className="font-TT-Commons flex items-center px-4 py-2 bg-gray-700 text-white text-xs font-medium tracking-wider uppercase w-full md:w-[28rem]">
+            <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0 font-TT-Commons"></div>
             Discover our services at African Group
           </div>
 
-          <h3 className="text-[1.5rem] md:text-5xl md:pb-4 font-bold text-gray-800 leading-tight tracking-wide">
-            A discreet adviser that consistently delivers <span className="text-[#248232]">quality advice</span> across
+          <h3 className="text-[1.5rem] md:text-5xl md:pb-4 font-bold text-gray-800 leading-tight tracking-wide font-TT-Commons">
+            A discreet adviser that consistently delivers <span className="text-[#248232] font-TT-Commons">quality advice</span> across
             the full transaction life cycle.
           </h3>
 
@@ -56,8 +56,8 @@ export default function ModernLayout() {
                 onMouseEnter={() => setHoveredItem(item.id)}
               >
                 <div className="flex items-center text-center group relative cursor-pointer">
-                  <span className="text-sm font-medium text-gray-500 mr-3">{item.number}</span>
-                  <span className="text-lg md:text-3xl font-medium text-gray-800 group-hover:text-[#248232] transition-colors">
+                  <span className="text-sm font-medium text-gray-500 mr-3 font-TT-Commons">{item.number}</span>
+                  <span className="font-TT-Commons text-lg md:text-3xl font-medium text-gray-800 group-hover:text-[#248232] transition-colors">
                     {item.text}
                   </span>
 

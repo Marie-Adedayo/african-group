@@ -58,19 +58,19 @@ export default function ResearchGrid() {
           transition={{ duration: 0.8 }}
         >
           <div className="md:align-text-top">
-            <span className="flex items-center px-3 py-1 text-xs font-medium bg-gray-700 text-gray-300 rounded uppercase w-[20rem]">
-              <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0"></div>
-              Market Intelligence
+            <span className="font-TT-Commons flex items-center px-3 py-1 text-xs font-medium bg-gray-700 text-gray-300 rounded uppercase w-[20rem]">
+              <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0 font-TT-Commons"></div>
+                Market Intelligence
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold mt-4">
-              <span className="text-[#248232]">Research-led</span> and outcome-oriented.
+            <h2 className="text-3xl sm:text-4xl font-bold mt-4 font-TT-Commons">
+              <span className="text-[#248232] font-TT-Commons">Research-led</span> and outcome-oriented.
             </h2>
           </div>
           <div>
-            <p className="mt-4 text-gray-300 max-w-2xl">
+            <p className="mt-4 text-gray-300 max-w-2xl font-TT-Commons">
               Numbers only ever tell part of the story. Interpretation and conviction inform application.
             </p>
-            <p className="mt-4 text-gray-300 max-w-2xl">
+            <p className="mt-4 text-gray-300 max-w-2xl font-TT-Commons">
               We combine unparalleled depth and breadth of market data with our team’s expertise and on-the-ground
               intelligence to deliver competitive advantage to our clients.
             </p>
@@ -126,15 +126,15 @@ export default function ResearchGrid() {
                   <img
                     src={report.image || "/placeholder.svg"}
                     alt={report.title}
-                    className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg font-TT-Commons"
                   />
                 </div>
                 <div className="flex flex-col flex-grow p-2 sm:p-4">
                   <div className="flex justify-between items-center text-xs text-gray-300 mb-2 sm:mb-4">
-                    <span className="font-medium">{report.category}</span>
+                    <span className="font-medium font-TT-Commons">{report.category}</span>
                     <span>{report.date}</span>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6 leading-tight">
+                  <h3 className="font-TT-Commons text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6 leading-tight">
                     {report.title}
                   </h3>
                   <div className="mt-auto">

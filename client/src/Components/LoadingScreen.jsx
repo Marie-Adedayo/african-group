@@ -25,7 +25,7 @@ const LoadingScreen = ({ onComplete }) => {
       transition={{ duration: 1 }}
     >
       <motion.h1
-        className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#248232]"
+        className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#248232] font-TT-Commons"
         variants={textVariants}
         initial="hidden"
         animate="visible"
