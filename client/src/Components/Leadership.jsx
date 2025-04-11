@@ -111,7 +111,7 @@ export default function LeadershipTeam() {
   return (
     <div className="w-full max-w-full mx-auto px-0 py-12"> 
       <div className="mb-8 text-left pl-8"> {/* Aligned left */}
-        <span className="inline-block bg-[#e6f0f5] text-[#2c5282] py-1 px-3 text-sm font-medium tracking-wider">
+        <span className="inline-block bg-[#e6f0f5] text-[#2c5282] py-1 px-3 text-sm font-medium tracking-wider font-TT-Commons">
           LEADERSHIP TEAM
         </span>
       </div>
@@ -137,9 +137,9 @@ export default function LeadershipTeam() {
                   className="object-cover w-full h-full rounded-lg"
                 />
               </div>
-              <h3 className="text-2xl font-medium text-gray-800 mt-2">{member.name}</h3>
-              <p className="text-gray-600">{member.title}</p>
-              <p className="text-gray-500 text-sm">{member.role}</p>
+              <h3 className="text-2xl font-medium text-gray-800 mt-2 font-TT-Commons">{member.name}</h3>
+              <p className="text-gray-600 font-TT-Commons">{member.title}</p>
+              <p className="text-gray-500 text-sm font-TT-Commons">{member.role}</p>
             </div>
           </SwiperSlide>
         ))}

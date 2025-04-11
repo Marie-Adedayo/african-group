@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function AboutStats() {
   return (
-    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 xl:gap-64">
+    <div className="w-full mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-12 md:py-16">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 xl:gap-30">
         {/* Left Column */}
         <div className="lg:w-1/2 space-y-4 sm:space-y-6 md:text-left ">
           <div className="flex items-center">
@@ -13,7 +13,7 @@ export default function AboutStats() {
             </span>
           </div>
 
-          <h2 className="font-TT-Commons text-[1.9rem] sm:text-3xl md:text-[3.2rem] lg:text-[3rem] font-medium text-[#1a365d] leading-tight tracking-tighter">
+          <h2 className="font-TT-Commons text-[1.9rem] sm:text-3xl lg:text-[3rem] font-medium text-[#1a365d] leading-tight -tracking-wider">
             Helping clients navigate a complex market by executing real estate solutions that ensure success.
           </h2>
 
@@ -26,23 +26,26 @@ export default function AboutStats() {
            <div>
             <Link
               to="/about"
-              className="group inline-flex items-center gap-4 text-inherit text-base font-normal no-underline bg-transparent border-none outline-none shadow-none cursor-pointer appearance-none hover:opacity-80 flex-row-reverse justify-end"
+              className="inline-flex items-center gap-4 text-inherit text-base font-normal no-underline bg-transparent border-none outline-none shadow-none cursor-pointer appearance-none flex-row-reverse justify-end"
             >
               <span className="text-[1rem] font-TT-Commons">About African Group</span>
-              <i className="p-4 bg-[#248232] transition-transform duration-300 group-hover:rotate-45">
+
+              {/* Add group here */}
+              <span className="group p-4 bg-[#248232] transition-transform duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1024 1024"
-                  className="w-5 h-5 text-black"
+                  className="w-5 h-5 text-white transition-transform duration-300 group-hover:rotate-45"
                 >
                   <path
                     fill="currentColor"
                     d="M803.729 129.203h-666.868v-129.203h886.846v886.846h-129.203v-665.698l-802.851 802.851-91.36-91.361 803.437-803.437z"
                   />
                 </svg>
-              </i>
+              </span>
             </Link>
           </div>
+
         </div>
 
         {/* Right Column - Stats */}

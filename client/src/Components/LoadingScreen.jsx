@@ -3,34 +3,33 @@ import { motion } from "framer-motion";
 
 const LoadingScreen = ({ onComplete }) => {
   const textVariants = {
-    hidden: { opacity: 0, scale: 0.5 }, 
-    visible: { opacity: 1, scale: 15 }, 
-    exit: { opacity: 0, scale: 19 }, 
+    initial: { opacity: 0, scale: 1 },
+    visible: { opacity: 0.6, scale: 1, transition: { duration: 1 } }, // appears at normal scale, slightly transparent
+    zoom: { opacity: 0.3, scale: 15, transition: { duration: 1.5 } }, // zooms in more transparent
+    exit: { opacity: 0, scale: 19, transition: { duration: 0.5 } }, // final fade out
   };
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      onComplete(); 
+      onComplete();
     }, 3500);
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, [onComplete]);
 
   return (
     <motion.div
-      className="flex items-center justify-center h-screen bg-gray-900"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-50"
+      initial="initial"
+      animate="visible"
+      exit="exit"
     >
       <motion.h1
         className="text-4xl md:text-6xl lg:text-8xl font-bold text-[#248232] font-TT-Commons"
         variants={textVariants}
-        initial="hidden"
-        animate="visible"
+        initial="initial"
+        animate={["visible", "zoom"]}
         exit="exit"
-        transition={{ duration: 1.5 }}
       >
         African Group
       </motion.h1>
