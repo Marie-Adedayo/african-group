@@ -28,11 +28,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-[#FCFFFC] fixed w-full z-50 font-TT-Commons transition-transform duration-500 ${
+      className={`bg-transparent fixed w-full z-50 font-TT-Commons transition-transform duration-500 ${
         isScrolling ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] items-center font-TT-Commons font-medium  text-[#071a0a] border-b border-[#071a0a] px-4 md:px-10 overflow-hidden">
+      <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] items-center font-TT-Commons font-medium  text-[#006400] border-b border-[#071a0a] px-4 md:px-10 overflow-hidden">
         {/* Logo and Menu Toggle */}
         <div className="md:w-auto w-full flex justify-between">
           <a href="/">

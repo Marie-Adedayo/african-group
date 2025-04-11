@@ -4,9 +4,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 const SurveyHero = () => {
     return(
         <>
-            <div className="bg-[#006400] text-[#FCFFFC]">
+            <div className="bg-[#fcfffc] text-[#006400]">
                 {/* Breadcrumb Section */}
-                <ul className="flex items-center gap-[0.6875rem] pt-[3.5rem] md:pt-[7rem] pb-1 md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#FCFFFC] text-[10px] leading-none uppercase">
+                <ul className="flex items-center gap-[0.6875rem] pt-[3.5rem] md:pt-[7rem] pb-1 md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#006400] text-[10px] leading-none uppercase">
                     <li>
                     <a href="/" className="">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10" className="w-3 h-3">
@@ -30,12 +30,18 @@ const SurveyHero = () => {
                     <li className="">Survey</li>
                 </ul>
                 {/* Hero Section */}
-                <div className="bg-[#006400] px-4 py-7 md:px-10 md:py-12">
+                <div className=" px-4 py-7 md:px-10 md:py-12">
+                   
                     
                     <div
                         className="relative h-[85vh]  md:h-[68vh] overflow-hidden rounded-[0.26438rem] bg-[#FCFFFC] flex flex-col justify-between p-[1.8125rem_1.125rem] text-[#071a0a]"
                     
                     >
+                        <img 
+                            src="/Images/surveying.jpg" 
+                            alt="" 
+                            className="absolute top-0 left-0 w-full h-[90vh] object-cover transition-opacity duration-500"
+                        />
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] z-[-1]"></div>
                             {/* Content */}

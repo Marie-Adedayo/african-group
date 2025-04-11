@@ -57,7 +57,7 @@ const NavLinks = () => {
                     {link.sublinks.map((sublink) => (
                       <div
                         key={sublink.Head}
-                        className="bg-[#dce4dc] text-[#071a0a] px-8 py-6 hover:bg-[#071a0a] hover:text-[#FCFFFC]"
+                        className="bg-[#85c485] text-[#071a0a] px-8 py-6 hover:bg-[#006400] hover:text-[#FCFFFC]"
                       >
                         <a href= {sublink.link} >
                           <h2 className="text-lg font-semibold">{sublink.Head}</h2>
