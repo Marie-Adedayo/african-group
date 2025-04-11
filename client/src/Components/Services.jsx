@@ -6,16 +6,18 @@ import { GoArrowUpRight } from "react-icons/go";
 export default function ModernLayout() {
   const [hoveredItem, setHoveredItem] = useState(0); // Default image index
 
-  const images = ["/Images/Services.webp", 
-    "/Images/picture.jpg",
-    "https://dtre.com/_next/image?url=https%3A%2F%2Fdtre-com.s3.eu-west-2.amazonaws.com%2Fdtre-com%2FDTRE_Industrial_Services2.jpg&w=750&q=75", 
-    "https://dtre.com/_next/image?url=https%3A%2F%2Fdtre-com.s3.eu-west-2.amazonaws.com%2Fdtre-com%2FDTRE_SciTech_Services2.jpg&w=750&q=75"];
+  const images = [
+    "/Images/survey.jpg",
+    "/Images/realestate.jpg", 
+    "/Images/construction.jpg",
+    "/Images/agro.jpg",
+  ];
 
   const listItems = [
     { id: 0, number: "01", text: "Surveying", link: "#" },
     { id: 1, number: "02", text: "Real Estate", link: "#" },
     { id: 2, number: "03", text: "Construction", link: "#" },
-    { id: 2, number: "03", text: "Agro", link: "#" },
+    { id: 3, number: "04", text: "Agro", link: "#" },
   ];
 
   return (
@@ -39,7 +41,7 @@ export default function ModernLayout() {
             Discover our services at African Group
           </div>
 
-          <h3 className="text-[1.5rem] md:text-5xl md:pb-4 font-bold text-gray-800 leading-tight tracking-wide font-TT-Commons">
+          <h3 className="text-[1.5rem] md:text-5xl md:pb-4 font-bold text-gray-800 leading-tight -tracking-widest font-TT-Commons">
             A discreet adviser that consistently delivers <span className="text-[#248232] font-TT-Commons">quality advice</span> across
             the full transaction life cycle.
           </h3>
