@@ -9,6 +9,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FiArrowUpRight } from "react-icons/fi";
 import Video1 from "../assets/video1.mp4"
 import Video2 from "../assets/video2.mp4"
+import Video3 from "../assets/video3.mp4"
 
 const slides = [
   {
@@ -30,7 +31,7 @@ const slides = [
     title: "Cultivating progress and harvesting dreams",
     description: "African Group leads the way in innovative agricultural solutions.",
     button: "Click to read",
-    videoUrl: Video1,
+    videoUrl: Video3,
   },
 ];
 

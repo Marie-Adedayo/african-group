@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logo.png";
 import Button from "../Button";
 import NavLinks from "./NavLinks";
 
@@ -28,10 +27,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-transparent fixed w-full z-50 font-TT-Commons transition-transform duration-500 ${
+      style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
+      className={`bg-white backdrop-blur-sm fixed w-full z-50 font-TT-Commons transition-transform duration-500 ${
         isScrolling ? "-translate-y-full" : "translate-y-0"
       }`}
     >
+
+      
       <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] items-center font-TT-Commons font-medium  text-[#006400] border-b border-[#071a0a] px-4 md:px-10 overflow-hidden">
         {/* Logo and Menu Toggle */}
         <div className="md:w-auto w-full flex justify-between">
@@ -52,6 +54,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
+       
         <ul className="hidden md:flex items-center gap-8">
           <NavLinks isMobile={false} />
           <li>
