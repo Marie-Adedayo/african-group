@@ -3,7 +3,7 @@ import people from "../../Images/people.jpg";
 
 export default function PeopleSection() {
   return (
-    <div className="w-full mx-auto p-2.5 py-10 md:px-8">
+    <div className="w-full mx-auto p-2.5 py-20 md:px-8">
       <div className="flex flex-col md:flex-row-reverse">
         <div className="w-full md:w-1/2 md:p-10 lg:p-16 flex justify-center">
           <div className="mb-6">

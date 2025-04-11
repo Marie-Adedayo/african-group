@@ -14,7 +14,7 @@ export default function NewsSection() {
       <div className="mb-8">
         <div className="inline-block bg-blue-100 px-3 py-1 mb-4">
           <motion.span
-            className="text-[#248232] text-xs font-medium uppercase tracking-wide"
+            className="text-[#248232] text-xs font-medium uppercase tracking-wide font-TT-Commons"
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -22,9 +22,9 @@ export default function NewsSection() {
             Company News
           </motion.span>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 font-TT-Commons">
           <motion.h2
-            className="text-[#1e2a4a] text-3xl md:text-4xl lg:text-5xl font-bold"
+            className="text-[#1e2a4a] text-3xl md:text-4xl lg:text-5xl font-bold font-TT-Commons"
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -40,7 +40,7 @@ export default function NewsSection() {
             whileTap={{ scale: 0.95 }} // Scale down on tap
             transition={{ duration: 0.3 }}
           >
-            <span>View All</span>
+            <span className="font-TT-Commons">View All</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -87,13 +87,13 @@ export default function NewsSection() {
                   alt={newsItem.title}
                   className="w-full h-[200px] md:h-[300px] object-cover"
                 />
-                <div className="absolute bottom-0 left-0 bg-[#0f1e4e] text-white text-xs font-semibold uppercase px-2 py-1 m-4 rounded">
+                <div className="absolute font-TT-Commons bottom-0 left-0 bg-[#0f1e4e] text-white text-xs font-semibold uppercase px-2 py-1 m-4 rounded">
                   {newsItem.category}
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-sm text-gray-500 mb-2">{newsItem.date}</p>
-                <h3 className="text-lg md:text-xl font-bold text-[#1e2a4a] mb-4">{newsItem.title}</h3>
+                <p className="text-sm text-gray-500 mb-2 font-TT-Commons">{newsItem.date}</p>
+                <h3 className="text-lg md:text-xl font-bold text-[#1e2a4a] mb-4 font-TT-Commons">{newsItem.title}</h3>
                 <motion.a
                   href={`/news/${newsItem.slug}`}
                   className="inline-flex items-center justify-center w-10 h-10 bg-[#248232] hover:bg-[#1e6b28] transition-colors text-white rounded"
