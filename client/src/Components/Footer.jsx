@@ -7,7 +7,7 @@ const Footer = () => {
       className="bg-gray-900 text-gray-400 rounded-tl-4xl rounded-tr-4xl"
       initial={{ opacity: 0, y: 50 }} // Initial state
       animate={{ opacity: 1, y: 0 }} // Final state
-      transition={{ duration: 1 }} // Animation duration
+      transition={{ duration: 0.5 }} // Animation duration
     >
       <div className="container mx-auto py-10 px-5">
         {/* Contact Info */}
