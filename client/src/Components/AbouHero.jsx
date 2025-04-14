@@ -11,7 +11,7 @@ const AboutHero = () => {
                     className="absolute w-full h-[90vh] object-cover transition-opacity duration-500"
                 />
                 {/* Breadcrumb Section */}
-                <ul className="flex items-center text-[#fcfffc] gap-[0.6875rem] md:pt-[7rem] md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#FCFFFC] text-[10px] leading-none uppercase">
+                <ul className="relative flex items-center text-[#fcfffc] gap-[0.6875rem] md:pt-[7rem] md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#FCFFFC] text-[10px] leading-none uppercase">
                     <li>
                         <a href="/" className="">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10" className="w-3 h-3">
