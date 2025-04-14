@@ -49,15 +49,15 @@ export default function ModernLayout() {
         </div>
 
         {/* Content & Links */}
-        <div className="w-full md:w-1/2 md:p-12 space-y-6 md:text-left py-10">
+        <div className="w-full md:w-1/2 md:p-12 space-y-6 md:text-left py-10 font-TT-Commons">
           <div className="font-TT-Commons flex items-center px-4 py-2 bg-gray-700 text-white text-xs font-medium tracking-wider uppercase w-full md:w-[28rem]">
-            <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0"></div>
+            <div className="bg-[#248232] w-2 h-2 mr-2 flex-shrink-0 font-TT-Commons"></div>
             Discover our services at African Group
           </div>
 
-          <h3 className="text-[1.5rem] md:text-3xl md:pb-4 font-bold text-gray-800 leading-tight tracking-tight">
+          <h3 className="text-[1.5rem] md:text-3xl md:pb-4 font-bold text-gray-800 leading-tight tracking-tight font-TT-Commons">
             A discreet adviser that consistently delivers{" "}
-            <span className="text-[#248232]">quality advice</span> across
+            <span className="text-[#248232] font-TT-Commons">quality advice</span> across
             the full transaction life cycle.
           </h3>
 
@@ -75,7 +75,7 @@ export default function ModernLayout() {
                   <span className="text-sm font-medium text-gray-500 mr-3">
                     {item.number}
                   </span>
-                  <span className="text-lg md:text-3xl font-medium text-gray-800
+                  <span className="text-lg md:text-3xl font-medium text-gray-800 font-TT-Commons
                                    group-hover:text-[#248232]
                                    transition-colors duration-300">
                     {item.text}
