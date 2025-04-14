@@ -83,7 +83,7 @@ const History = () => {
           </div>
         </div>
   
-        <div className="slider-container w-full h-full overflow-hidden">
+        <div className="slider-container w-full overflow-hidden">
           <Swiper
             modules={[Navigation]}
             navigation={{ nextEl: ".next-button", prevEl: ".prev-button" }}
