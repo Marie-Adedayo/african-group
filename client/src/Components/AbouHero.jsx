@@ -4,12 +4,15 @@ import { FiArrowUpRight } from "react-icons/fi";
 const AboutHero = () => {
     return(
         <>
-            <div className=" text-[#fcfffc] font-TT-Commons">
-                <img 
-                    src="/Images/about.png" 
-                    alt="" 
-                    className="absolute w-full h-[90vh] object-cover transition-opacity duration-500"
-                />
+            <div className=" text-[#fcfffc] font-TT-Commons h-[100vh]">
+                <div className="absolute  ">
+                    <img 
+                        src="/Images/about.png" 
+                        alt="" 
+                        className=" w-full h-[90vh] object-cover transition-opacity duration-500"
+                    />
+                </div>
+
                 {/* Breadcrumb Section */}
                 <ul className="relative flex items-center text-[#fcfffc] gap-[0.6875rem] md:pt-[7rem] md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#FCFFFC] text-[10px] leading-none uppercase">
                     <li>
@@ -35,7 +38,7 @@ const AboutHero = () => {
                     <li className="">About</li>
                 </ul>
                 {/* Hero Section */}
-                <div className="relative bg-transparent mt-[23rem] flex item-center justify-center md:items-end md:justify-end p-4">
+                <div className="relative bg-transparent mt-[20rem] md:mt-[23rem] flex item-center justify-center md:items-end md:justify-end p-4">
                     <div className="space-x-4">
                         <div className="w-full md:w-[400px] group">
                             <a
