@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+/* import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const LoadingScreen = ({ onComplete }) => {
@@ -38,3 +38,50 @@ const LoadingScreen = ({ onComplete }) => {
 };
 
 export default LoadingScreen;
+ */
+
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+
+const LoadingScreen = ({ onComplete }) => {
+  const textVariants = {
+    initial: { opacity: 1, scale: 1 },
+    zoom: {
+      opacity: 1,
+      scale: 15,
+      transition: { duration: 1.5 },
+    },
+    exit: {
+      opacity: 0,
+      scale: 20,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onComplete();
+    }, 3500);
+
+    return () => clearTimeout(timer);
+  }, [onComplete]);
+
+  return (
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90"
+      initial="initial"
+      animate="zoom"
+      exit="exit"
+    >
+      <motion.h1
+        className="text-6xl md:text-8xl font-extrabold font-TT-Commons mix-blend-difference text-white select-none"
+        variants={textVariants}
+      >
+        African Group
+      </motion.h1>
+    </motion.div>
+  );
+};
+
+export default LoadingScreen;
+

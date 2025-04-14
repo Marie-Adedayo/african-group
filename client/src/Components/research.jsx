@@ -105,8 +105,7 @@ export default function ResearchGrid() {
             <motion.div
               key={report.id}
               className={`
-                flex flex-col bg-transparent overflow-hidden 
-                ${idx % 3 !== 2 ? "border-r border-gray-700 px-8" : ""} /* vertical lines between columns */
+                flex flex-col bg-transparent overflow-hidden px-2 md:px-5 
               `}
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.3 }}
