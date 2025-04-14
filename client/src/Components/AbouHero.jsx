@@ -4,33 +4,33 @@ import { FiArrowUpRight } from "react-icons/fi";
 const AboutHero = () => {
     return(
         <>
-            <div className="bg-transparent text-[#fcfffc] font-TT-Commons">
+            <div className=" text-[#fcfffc] font-TT-Commons">
                 <img 
                     src="/Images/about.png" 
                     alt="" 
-                    className="absolute top-0 left-0 w-full h-[90vh] object-cover transition-opacity duration-500"
+                    className="absolute w-full h-[90vh] object-cover transition-opacity duration-500"
                 />
                 {/* Breadcrumb Section */}
                 <ul className="flex items-center text-[#fcfffc] gap-[0.6875rem] md:pt-[7rem] md:pb-4 pl-4 border-t-[1px] border-b-[1px] border-[#FCFFFC] text-[10px] leading-none uppercase">
                     <li>
-                    <a href="/" className="">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10" className="w-3 h-3">
-                        <path
-                            fill="currentColor"
-                            d="M0 10V3.35L4 0l4 3.35V10H5.033V5.956H2.967V10H0Z"
-                        ></path>
-                        </svg>
-                    </a>
+                        <a href="/" className="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10" className="w-3 h-3">
+                            <path
+                                fill="currentColor"
+                                d="M0 10V3.35L4 0l4 3.35V10H5.033V5.956H2.967V10H0Z"
+                            ></path>
+                            </svg>
+                        </a>
                     </li>
                     <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 6" className="w-2.5 h-2.5 ">
-                        <path
-                        fill="currentColor"
-                        d="M2.146 3 0 .854.707.146 3.561 3 .707 5.854 0 5.146 2.146 3Z"
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        ></path>
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 6" className="w-2.5 h-2.5 ">
+                            <path
+                            fill="currentColor"
+                            d="M2.146 3 0 .854.707.146 3.561 3 .707 5.854 0 5.146 2.146 3Z"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            ></path>
+                        </svg>
                     </li>
                     <li className="">About</li>
                 </ul>

@@ -9,27 +9,27 @@ export const links = [
       {
         Head: "Surveying",
         name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        link: "/survey",
+        link: "/service/survey",
       },
       {
         Head: "Real Estate ",
         name: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "/service/dolor-sit-amet",
+        link: "/service/real-estate",
       },
       {
         Head: "Construction",
         name: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-        link: "/service/consectetur-adipiscing",
+        link: "/service/construction",
       },
       {
         Head: "Agro",
         name: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-        link: "/service/consectetur-adipiscing",
+        link: "/service/agro",
       },
       {
         Head: "Tech",
         name: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-        link: "/service/consectetur-adipiscing",
+        link: "/service/Tech",
       },
     ],
   },

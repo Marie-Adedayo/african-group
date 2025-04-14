@@ -1,6 +1,7 @@
 import Navbar from "../Components/Navbar/Navbar"
 import SurveyHero from "../Components/SurveyHero"
 import Overview from "../Components/Overview"
+import Footer from "../Components/Footer"
 
 
 const Survey = () => {
@@ -9,6 +10,7 @@ const Survey = () => {
             <Navbar />
             < SurveyHero />
             <Overview />
+            <Footer />
         
         </>
 

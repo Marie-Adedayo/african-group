@@ -1,14 +1,14 @@
 const Overview = () => {
     return (
         <section >
-            <div className="w-[99%] h-[1px] mx-2 my-10 bg-[#FCFFFC] font-TT-Commons">
+            <div className="w-full h-[80vh] bg-[#FCFFFC] font-TT-Commons pt-8">
                 <div className="font-TT-Commons grid grid-rows-1 md:grid-cols-2 gap-4 md:gap-8  relative px-[0.625rem] md:px-[1.5625rem] lg:px-[3.125rem]">
                     <div className="">
                         <img
                             alt="DTRE"
                             sizes="50vw"
                             src="/Images/company.jpg"
-                            className=" inset-0 object-cover"
+                            className=" object-cover"
                         />
                     </div>
 
