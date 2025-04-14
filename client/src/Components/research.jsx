@@ -105,9 +105,8 @@ export default function ResearchGrid() {
             <motion.div
               key={report.id}
               className={`
-                flex flex-col bg-transparent overflow-hidden
-                ${idx > 2 ? "border-t border-gray-700" : ""}   /* top line on every row except first */
-                ${idx % 3 !== 2 ? "border-r border-gray-700" : ""} /* vertical lines between columns */
+                flex flex-col bg-transparent overflow-hidden 
+                ${idx % 3 !== 2 ? "border-r border-gray-700 px-8" : ""} /* vertical lines between columns */
               `}
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.3 }}
@@ -122,11 +121,10 @@ export default function ResearchGrid() {
                   src={report.image || "/placeholder.svg"}
                   alt={report.title}
                   className="absolute inset-0 w-full h-full object-cover"
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.0 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 />
               </div>
-                <hr className="bg-white"/>
               <div className="flex flex-col flex-grow p-4">
                 <div className="flex justify-between items-center text-xs text-gray-300 mb-2">
                   <span className="font-medium">{report.category}</span>
