@@ -129,7 +129,7 @@ export default function LeadershipTeam() {
       >
         {teamMembers.map((member) => (
           <SwiperSlide key={member.id} className="pb-8">
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full md:p-4 p-0">
               <div className="relative w-full h-[30vh] md:h-[40vh] overflow-hidden"> {/* Reduced image size */}
                 <img
                   src={member.image}
