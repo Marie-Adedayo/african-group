@@ -111,7 +111,6 @@ export default function ResearchGrid() {
               transition={{ duration: 0.3 }}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
             >
               {/* Card Content */}
               <div className="w-100% h-0.5 bg-white mb-8"></div>
