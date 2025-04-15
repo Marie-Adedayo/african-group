@@ -12,7 +12,7 @@ export default function NewsSection() {
     >
       {/* Header */}
       <div className="mb-8">
-        <div className="inline-block bg-blue-100 px-3 py-1 mb-4">
+        <div className="inline-block bg-blue-100 px-3 py-1 mb-4 font-TT-Commons">
           <motion.span
             className="text-[#248232] text-xs font-medium uppercase tracking-wide font-TT-Commons"
             initial={{ x: -50, opacity: 0 }}

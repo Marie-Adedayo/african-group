@@ -16,15 +16,13 @@ body {
 }
 
 @font-face {
-  font-family: 'GT-Walsheim';
+  font-family: 'TT-Commons';
   src: url('../src/assets/Fonts/TT-Commons/Fontspring-DEMO-tt_commons_pro_regular.otf') format('opentype');
-  font-weight: 700;
+  font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 
 @theme {
   --font-TT-Commons: TT-Commons, 'sans-serif';
-  --color-brand-red: oklch(35.32% 0.1449 29.23);
-  --color-red-light: oklch(45.85% 0.174 29.23);
 }
