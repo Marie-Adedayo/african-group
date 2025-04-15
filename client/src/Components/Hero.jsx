@@ -49,6 +49,7 @@ const Hero = () => {
           autoPlay
           loop
           muted
+          playbackRate={0.3}
           className={`absolute top-0 left-0 w-full h-[90vh] object-cover transition-opacity duration-500 ${
             index === activeIndex ? "opacity-100" : "opacity-0"
           }`}
@@ -59,7 +60,7 @@ const Hero = () => {
         {/* Swiper */}
         <Swiper
           modules={[Navigation, Autoplay]}
-          autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 8000 }}
           loop={true}
           navigation={{ nextEl: ".next", prevEl: ".prev" }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -103,7 +104,7 @@ const Hero = () => {
                   {/* Progress bar */}
                   <div className="w-40 md:w-[20rem] h-1 bg-[#85c485] rounded-full overflow-hidden">
                       <div
-                      className={`h-full bg-[#006400] transition-all duration-[10000ms] ${
+                      className={`h-full bg-[#006400] transition-all duration-[8000ms] ${
                           index === activeIndex ? "w-full" : "w-0"
                       }`}
                       ></div>

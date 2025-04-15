@@ -25,6 +25,7 @@ function App() {
           <Route path="/service/constrution" element={<Construction />} />
           <Route path="/service/agro" element={<Agro />} />
           <Route path="/service/tech" element={<Tech />} />
+          <Route path="/service/real-estate" element={<Tech />} />
         </Routes>
 
         {/* Loading screen overlay */}
