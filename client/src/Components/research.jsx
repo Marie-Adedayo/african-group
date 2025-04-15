@@ -41,7 +41,7 @@ export default function ResearchGrid() {
 
   return (
     <motion.div
-      className="bg-[#040f0f] rounded-tl-3xl rounded-tr-3xl md:rounded-tl-4xl"
+      className="bg-[#040f0f] rounded-tl-3xl rounded-tr-3xl md:rounded-tl-4xl font-TT-Commons"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
@@ -90,7 +90,7 @@ export default function ResearchGrid() {
       </div>
 
       {/* Research Reports Grid */}
-      <div className="pb-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+      <div className="pb-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8 font-TT-Commons">
         <motion.div
           ref={ref}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto"
@@ -123,12 +123,12 @@ export default function ResearchGrid() {
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 />
               </div>
-              <div className="flex flex-col flex-grow p-4">
+              <div className="flex flex-col flex-grow p-4 font-TT-Commons">
                 <div className="flex justify-between items-center text-xs text-gray-300 mb-2">
-                  <span className="font-medium">{report.category}</span>
-                  <span>{report.date}</span>
+                  <span className="font-medium font-TT-Commons">{report.category}</span>
+                  <span className="font-TT-Commons">{report.date}</span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 leading-tight">
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 leading-tight font-TT-Commons">
                   {report.title}
                 </h3>
                 <div className="mt-auto">

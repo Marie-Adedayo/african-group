@@ -1,5 +1,5 @@
 import { FaMapMarkerAlt, FaPhone, FaEnvelopeOpen, FaFacebookF, FaTwitter, FaGooglePlusG, FaTelegramPlane, FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -41,7 +41,7 @@ const Footer = () => {
             <FaPhone className="text-[#248232] text-3xl" />
             <div>
               <h4 className="text-white text-lg font-semibold font-TT-Commons">Call us</h4>
-              <span>9876543210 0</span>
+              <span className="font-TT-Commons">9876543210 0</span>
             </div>
           </motion.div>
           <motion.div

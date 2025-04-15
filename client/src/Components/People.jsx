@@ -3,7 +3,7 @@ import people from "../../Images/people.jpg";
 
 export default function PeopleSection() {
   return (
-    <div className="w-full mx-auto p-2.5 py-20 md:px-8">
+    <div className="w-full mx-auto p-2.5 py-20 md:px-8 font-TT-Commons">
       <div className="flex flex-col md:flex-row-reverse">
         <div className="w-full md:w-1/2 md:p-10 lg:p-16 flex justify-center">
           <div className="mb-6">
@@ -22,7 +22,7 @@ export default function PeopleSection() {
             </p>
 
              <a href="#" className="inline-flex items-center hover:text-[#248232] transition-colors font-TT-Commons">
-                <GoArrowUpRight className="h-8 w-8 mr-2 bg-[#248232] text-white" /> Meet the Team
+                <GoArrowUpRight className="h-8 w-8 mr-2 bg-[#248232] text-white font-TT-Commons" /> Meet the Team
             </a>
           </div>
         </div>

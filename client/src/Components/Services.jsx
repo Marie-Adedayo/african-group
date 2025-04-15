@@ -10,13 +10,15 @@ export default function ModernLayout() {
     "/Images/realestate.jpg", 
     "/Images/construction.jpg",
     "/Images/agro.jpg",
+    "/Images/tech.jpg",
   ];
 
   const listItems = [
-    { id: 0, number: "01", text: "Surveying", link: "#" },
-    { id: 1, number: "02", text: "Real Estate", link: "#" },
-    { id: 2, number: "03", text: "Construction", link: "#" },
-    { id: 3, number: "04", text: "Agro", link: "#" },
+    { id: 0, number: "01", text: "Surveying", link: "/service/survey" },
+    { id: 1, number: "02", text: "Real Estate", link: "/service/real-estate" },
+    { id: 2, number: "03", text: "Construction", link: "/service/construction" },
+    { id: 3, number: "04", text: "Agro", link: "/service/agro" },
+    { id: 4, number: "05", text: "Tech", link: "/service/tech" },
   ];
 
   return (
